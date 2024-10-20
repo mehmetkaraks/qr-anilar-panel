@@ -33,58 +33,6 @@
       </div>
     </div>
 
-    <div class="header-container container-xxl">
-      <header class="header navbar navbar-expand-sm expand-header">
-        <a href="javascript:void(0);" class="sidebarCollapse">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </a>
-
-        <div class="search-animated toggle-search">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-          <form class="form-inline search-full form-inline search" role="search">
-            <div class="search-bar">
-              <input type="text" class="form-control search-form-control ml-lg-auto" placeholder="Ara..." />
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x search-close">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-              </svg>
-            </div>
-          </form>
-          <span class="badge badge-secondary"></span>
-        </div>
-
-        <ul class="navbar-item flex-row ms-lg-auto ms-0">
-          <li class="nav-item dropdown language-dropdown">
-            <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="language-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="../src/assets/img/1x1/tr.svg" class="flag-width" alt="flag" />
-            </a>
-            <div class="dropdown-menu position-absolute" aria-labelledby="language-dropdown">
-              <a class="dropdown-item d-flex" href="javascript:void(0);"><img src="../src/assets/img/1x1/us.svg" class="flag-width" alt="flag" /> <span class="align-self-center">&nbsp;English</span></a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown notification-dropdown">
-            <div class="dropdown-item user__log-out--pd">
-              <a href="auth-boxed-signin.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
-                  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                  <polyline points="16 17 21 12 16 7"></polyline>
-                  <line x1="21" y1="12" x2="9" y2="12"></line>
-                </svg>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </header>
-    </div>
-
     <div class="main-container" id="container">
       <div class="overlay"></div>
       <div class="search-overlay"></div>
@@ -246,93 +194,149 @@
         </div>
       </section>
 
-      <div id="content" class="main-content">
-        <div class="layout-px-spacing">
-          <div class="middle-content container-xxl p-0">
-            <div class="row layout-top-spacing layout-spacing" id="cancel-row">
-              <div class="col-xl-12 col-lg-12 col-md-12">
-                <div class="calendar-container">
-                  <div class="calendar"></div>
+      <div id="content" class="main-content main__df">
+        <div class="header-container container-xxl">
+          <header class="header navbar navbar-expand-sm expand-header">
+            <a href="javascript:void(0);" class="sidebarCollapse">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </a>
+
+            <div class="search-animated toggle-search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <form class="form-inline search-full form-inline search" role="search">
+                <div class="search-bar">
+                  <input type="text" class="form-control search-form-control ml-lg-auto" placeholder="Ara..." />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x search-close">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
                 </div>
-              </div>
+              </form>
+              <span class="badge badge-secondary"></span>
             </div>
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <ul class="navbar-item flex-row ms-lg-auto ms-0">
+              <li class="nav-item dropdown language-dropdown">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="language-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="../src/assets/img/1x1/tr.svg" class="flag-width" alt="flag" />
+                </a>
+                <div class="dropdown-menu position-absolute" aria-labelledby="language-dropdown">
+                  <a class="dropdown-item d-flex" href="javascript:void(0);"><img src="../src/assets/img/1x1/us.svg" class="flag-width" alt="flag" /> <span class="align-self-center">&nbsp;English</span></a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown notification-dropdown">
+                <div class="dropdown-item user__log-out--pd">
+                  <a href="auth-boxed-signin.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
+                      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                      <polyline points="16 17 21 12 16 7"></polyline>
+                      <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </header>
+        </div>
+
+        <section class="section__wd">
+          <div class="layout-px-spacing">
+            <div class="middle-content container-xxl p-0">
+              <div class="row layout-top-spacing layout-spacing" id="cancel-row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                  <div class="calendar-container">
+                    <div class="calendar"></div>
                   </div>
-                  <div class="modal-body">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="">
-                          <label class="form-label">Enter Title</label>
-                          <input id="event-title" type="text" class="form-control" />
-                        </div>
-                      </div>
+                </div>
+              </div>
 
-                      <div class="col-md-12 d-none">
-                        <div class="">
-                          <label class="form-label">Enter Start Date</label>
-                          <input id="event-start-date" type="text" class="form-control" />
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="">
+                            <label class="form-label">Enter Title</label>
+                            <input id="event-title" type="text" class="form-control" />
+                          </div>
                         </div>
-                      </div>
 
-                      <div class="col-md-12 d-none">
-                        <div class="">
-                          <label class="form-label">Enter End Date</label>
-                          <input id="event-end-date" type="text" class="form-control" />
+                        <div class="col-md-12 d-none">
+                          <div class="">
+                            <label class="form-label">Enter Start Date</label>
+                            <input id="event-start-date" type="text" class="form-control" />
+                          </div>
                         </div>
-                      </div>
 
-                      <div class="col-md-12">
-                        <div class="d-flex mt-4">
-                          <div class="n-chk">
-                            <div class="form-check form-check-primary form-check-inline">
-                              <input class="form-check-input" type="radio" name="event-level" value="Work" id="rwork" />
-                              <label class="form-check-label" for="rwork">Work</label>
-                            </div>
+                        <div class="col-md-12 d-none">
+                          <div class="">
+                            <label class="form-label">Enter End Date</label>
+                            <input id="event-end-date" type="text" class="form-control" />
                           </div>
-                          <div class="n-chk">
-                            <div class="form-check form-check-warning form-check-inline">
-                              <input class="form-check-input" type="radio" name="event-level" value="Travel" id="rtravel" />
-                              <label class="form-check-label" for="rtravel">Travel</label>
+                        </div>
+
+                        <div class="col-md-12">
+                          <div class="d-flex mt-4">
+                            <div class="n-chk">
+                              <div class="form-check form-check-primary form-check-inline">
+                                <input class="form-check-input" type="radio" name="event-level" value="Work" id="rwork" />
+                                <label class="form-check-label" for="rwork">Work</label>
+                              </div>
                             </div>
-                          </div>
-                          <div class="n-chk">
-                            <div class="form-check form-check-success form-check-inline">
-                              <input class="form-check-input" type="radio" name="event-level" value="Personal" id="rPersonal" />
-                              <label class="form-check-label" for="rPersonal">Personal</label>
+                            <div class="n-chk">
+                              <div class="form-check form-check-warning form-check-inline">
+                                <input class="form-check-input" type="radio" name="event-level" value="Travel" id="rtravel" />
+                                <label class="form-check-label" for="rtravel">Travel</label>
+                              </div>
                             </div>
-                          </div>
-                          <div class="n-chk">
-                            <div class="form-check form-check-danger form-check-inline">
-                              <input class="form-check-input" type="radio" name="event-level" value="Important" id="rImportant" />
-                              <label class="form-check-label" for="rImportant">Important</label>
+                            <div class="n-chk">
+                              <div class="form-check form-check-success form-check-inline">
+                                <input class="form-check-input" type="radio" name="event-level" value="Personal" id="rPersonal" />
+                                <label class="form-check-label" for="rPersonal">Personal</label>
+                              </div>
+                            </div>
+                            <div class="n-chk">
+                              <div class="form-check form-check-danger form-check-inline">
+                                <input class="form-check-input" type="radio" name="event-level" value="Important" id="rImportant" />
+                                <label class="form-check-label" for="rImportant">Important</label>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success btn-update-event" data-fc-event-public-id="">Update changes</button>
-                    <button type="button" class="btn btn-primary btn-add-event">Etkinlik Ekle</button>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success btn-update-event" data-fc-event-public-id="">Update changes</button>
+                      <button type="button" class="btn btn-primary btn-add-event">Etkinlik Ekle</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="footer-wrapper">
-          <div class="footer-section f-section-1">
-            <p class="">© <span class="dynamic-year">2025</span> <a target="_blank" href="https://bluenightyazilim.com.tr">BlueNight Yazılım</a> Tarafından Tüm Hakları Saklıdır</p>
+        <footer>
+          <div class="footer-wrapper">
+            <div class="footer-section f-section-1">
+              <p class="">© <span class="dynamic-year">2025</span> <a target="_blank" href="https://bluenightyazilim.com.tr">BlueNight Yazılım</a> Tarafından Tüm Hakları Saklıdır</p>
+            </div>
           </div>
-        </div>
+        </footer>
       </div>
     </div>
 

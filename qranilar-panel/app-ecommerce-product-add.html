@@ -42,58 +42,6 @@
       </div>
     </div>
 
-    <div class="header-container container-xxl">
-      <header class="header navbar navbar-expand-sm expand-header">
-        <a href="javascript:void(0);" class="sidebarCollapse">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </a>
-
-        <div class="search-animated toggle-search">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-          <form class="form-inline search-full form-inline search" role="search">
-            <div class="search-bar">
-              <input type="text" class="form-control search-form-control ml-lg-auto" placeholder="Ara..." />
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x search-close">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-              </svg>
-            </div>
-          </form>
-          <span class="badge badge-secondary"></span>
-        </div>
-
-        <ul class="navbar-item flex-row ms-lg-auto ms-0">
-          <li class="nav-item dropdown language-dropdown">
-            <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="language-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="../src/assets/img/1x1/tr.svg" class="flag-width" alt="flag" />
-            </a>
-            <div class="dropdown-menu position-absolute" aria-labelledby="language-dropdown">
-              <a class="dropdown-item d-flex" href="javascript:void(0);"><img src="../src/assets/img/1x1/us.svg" class="flag-width" alt="flag" /> <span class="align-self-center">&nbsp;English</span></a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown notification-dropdown">
-            <div class="dropdown-item user__log-out--pd">
-              <a href="auth-boxed-signin.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
-                  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                  <polyline points="16 17 21 12 16 7"></polyline>
-                  <line x1="21" y1="12" x2="9" y2="12"></line>
-                </svg>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </header>
-    </div>
-
     <div class="main-container" id="container">
       <div class="overlay"></div>
       <div class="search-overlay"></div>
@@ -255,119 +203,173 @@
         </div>
       </section>
 
-      <div id="content" class="main-content">
-        <div class="layout-px-spacing">
-          <div class="middle-content container-xxl p-0">
-            <div class="page-meta">
-              <nav class="breadcrumb-style-one" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">App</a></li>
-                  <li class="breadcrumb-item"><a href="#">Ecommerce</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Create</li>
-                </ol>
-              </nav>
+      <div id="content" class="main-content main__df">
+        <div class="header-container container-xxl">
+          <header class="header navbar navbar-expand-sm expand-header">
+            <a href="javascript:void(0);" class="sidebarCollapse">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </a>
+
+            <div class="search-animated toggle-search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <form class="form-inline search-full form-inline search" role="search">
+                <div class="search-bar">
+                  <input type="text" class="form-control search-form-control ml-lg-auto" placeholder="Ara..." />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x search-close">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </div>
+              </form>
+              <span class="badge badge-secondary"></span>
             </div>
 
-            <div class="row mb-4 layout-spacing layout-top-spacing">
-              <div class="col-xxl-9 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="widget-content widget-content-area ecommerce-create-section">
-                  <div class="row mb-4">
-                    <div class="col-sm-12">
-                      <input type="text" class="form-control" id="inputEmail3" placeholder="Product Name" />
+            <ul class="navbar-item flex-row ms-lg-auto ms-0">
+              <li class="nav-item dropdown language-dropdown">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="language-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="../src/assets/img/1x1/tr.svg" class="flag-width" alt="flag" />
+                </a>
+                <div class="dropdown-menu position-absolute" aria-labelledby="language-dropdown">
+                  <a class="dropdown-item d-flex" href="javascript:void(0);"><img src="../src/assets/img/1x1/us.svg" class="flag-width" alt="flag" /> <span class="align-self-center">&nbsp;English</span></a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown notification-dropdown">
+                <div class="dropdown-item user__log-out--pd">
+                  <a href="auth-boxed-signin.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
+                      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                      <polyline points="16 17 21 12 16 7"></polyline>
+                      <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </header>
+        </div>
+
+        <section class="section__wd">
+          <div class="layout-px-spacing">
+            <div class="middle-content container-xxl p-0">
+              <div class="page-meta">
+                <nav class="breadcrumb-style-one" aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">App</a></li>
+                    <li class="breadcrumb-item"><a href="#">Ecommerce</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Create</li>
+                  </ol>
+                </nav>
+              </div>
+
+              <div class="row mb-4 layout-spacing layout-top-spacing">
+                <div class="col-xxl-9 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="widget-content widget-content-area ecommerce-create-section">
+                    <div class="row mb-4">
+                      <div class="col-sm-12">
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Product Name" />
+                      </div>
+                    </div>
+
+                    <div class="row mb-4">
+                      <div class="col-sm-12">
+                        <label>Description</label>
+                        <div id="product-description"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-8">
+                        <label for="product-images">Upload Images</label>
+                        <div class="multiple-file-upload">
+                          <input type="file" class="filepond file-upload-multiple" name="filepond" id="product-images" multiple data-allow-reorder="true" data-max-file-size="3MB" data-max-files="5" />
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 text-center">
+                        <div class="switch form-switch-custom switch-inline form-switch-primary mt-4">
+                          <input class="switch-input" type="checkbox" role="switch" id="showPublicly" checked />
+                          <label class="switch-label" for="showPublicly">Display publicly</label>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                </div>
 
-                  <div class="row mb-4">
-                    <div class="col-sm-12">
-                      <label>Description</label>
-                      <div id="product-description"></div>
-                    </div>
-                  </div>
-
+                <div class="col-xxl-3 col-xl-12 col-lg-12 col-md-12 col-sm-12">
                   <div class="row">
-                    <div class="col-md-8">
-                      <label for="product-images">Upload Images</label>
-                      <div class="multiple-file-upload">
-                        <input type="file" class="filepond file-upload-multiple" name="filepond" id="product-images" multiple data-allow-reorder="true" data-max-file-size="3MB" data-max-files="5" />
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 text-center">
-                      <div class="switch form-switch-custom switch-inline form-switch-primary mt-4">
-                        <input class="switch-input" type="checkbox" role="switch" id="showPublicly" checked />
-                        <label class="switch-label" for="showPublicly">Display publicly</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xxl-3 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="row">
-                  <div class="col-xxl-12 col-xl-8 col-lg-8 col-md-7 mt-xxl-0 mt-4">
-                    <div class="widget-content widget-content-area ecommerce-create-section">
-                      <div class="row">
-                        <div class="col-xxl-12 mb-4">
-                          <div class="switch form-switch-custom switch-inline form-switch-secondary">
-                            <input class="switch-input" type="checkbox" role="switch" id="in-stock" />
-                            <label class="switch-label" for="in-stock">In Stock</label>
+                    <div class="col-xxl-12 col-xl-8 col-lg-8 col-md-7 mt-xxl-0 mt-4">
+                      <div class="widget-content widget-content-area ecommerce-create-section">
+                        <div class="row">
+                          <div class="col-xxl-12 mb-4">
+                            <div class="switch form-switch-custom switch-inline form-switch-secondary">
+                              <input class="switch-input" type="checkbox" role="switch" id="in-stock" />
+                              <label class="switch-label" for="in-stock">In Stock</label>
+                            </div>
+                          </div>
+                          <div class="col-xxl-12 col-md-6 mb-4">
+                            <label for="proCode">Product Code</label>
+                            <input type="text" class="form-control" id="proCode" value="" />
+                          </div>
+                          <div class="col-xxl-12 col-md-6 mb-4">
+                            <label for="proSKU">Product SKU</label>
+                            <input type="text" class="form-control" id="proSKU" value="" />
+                          </div>
+                          <div class="col-xxl-12 col-md-6 mb-4">
+                            <label for="gender">Gender</label>
+                            <select class="form-select" id="gender">
+                              <option value="">Choose...</option>
+                              <option value="men">Men</option>
+                              <option value="women">Women</option>
+                              <option value="kids">Kids</option>
+                              <option value="unisex">Unisex</option>
+                            </select>
+                          </div>
+                          <div class="col-xxl-12 col-md-6 mb-4">
+                            <label for="category">Category</label>
+                            <select class="form-select" id="category">
+                              <option value="">Choose...</option>
+                              <option value="electronics">Electronics</option>
+                              <option value="clothing">Clothing</option>
+                              <option value="organic">Organic</option>
+                              <option value="apperal">Apperal</option>
+                              <option value="accessories">Accessories</option>
+                            </select>
+                          </div>
+                          <div class="col-xxl-12 col-lg-6 col-md-12">
+                            <label for="tags">Tags</label>
+                            <input id="tags" class="product-tags" value="" />
                           </div>
                         </div>
-                        <div class="col-xxl-12 col-md-6 mb-4">
-                          <label for="proCode">Product Code</label>
-                          <input type="text" class="form-control" id="proCode" value="" />
-                        </div>
-                        <div class="col-xxl-12 col-md-6 mb-4">
-                          <label for="proSKU">Product SKU</label>
-                          <input type="text" class="form-control" id="proSKU" value="" />
-                        </div>
-                        <div class="col-xxl-12 col-md-6 mb-4">
-                          <label for="gender">Gender</label>
-                          <select class="form-select" id="gender">
-                            <option value="">Choose...</option>
-                            <option value="men">Men</option>
-                            <option value="women">Women</option>
-                            <option value="kids">Kids</option>
-                            <option value="unisex">Unisex</option>
-                          </select>
-                        </div>
-                        <div class="col-xxl-12 col-md-6 mb-4">
-                          <label for="category">Category</label>
-                          <select class="form-select" id="category">
-                            <option value="">Choose...</option>
-                            <option value="electronics">Electronics</option>
-                            <option value="clothing">Clothing</option>
-                            <option value="organic">Organic</option>
-                            <option value="apperal">Apperal</option>
-                            <option value="accessories">Accessories</option>
-                          </select>
-                        </div>
-                        <div class="col-xxl-12 col-lg-6 col-md-12">
-                          <label for="tags">Tags</label>
-                          <input id="tags" class="product-tags" value="" />
-                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-xxl-12 col-xl-4 col-lg-4 col-md-5 mt-4">
-                    <div class="widget-content widget-content-area ecommerce-create-section">
-                      <div class="row">
-                        <div class="col-sm-12 mb-4">
-                          <label for="regular-price">Regular Price</label>
-                          <input type="text" class="form-control" id="regular-price" value="" />
-                        </div>
-                        <div class="col-sm-12 mb-4">
-                          <label for="sale-price">Sale Price</label>
-                          <input type="text" class="form-control" id="sale-price" value="" />
-                        </div>
-                        <div class="col-sm-12 mb-4">
-                          <div class="switch form-switch-custom switch-inline form-switch-danger">
-                            <input class="switch-input" type="checkbox" role="switch" id="pricing-includes-texes" />
-                            <label class="switch-label" for="pricing-includes-texes">Price includes taxes</label>
+                    <div class="col-xxl-12 col-xl-4 col-lg-4 col-md-5 mt-4">
+                      <div class="widget-content widget-content-area ecommerce-create-section">
+                        <div class="row">
+                          <div class="col-sm-12 mb-4">
+                            <label for="regular-price">Regular Price</label>
+                            <input type="text" class="form-control" id="regular-price" value="" />
                           </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <button class="btn btn-success w-100">Add Product</button>
+                          <div class="col-sm-12 mb-4">
+                            <label for="sale-price">Sale Price</label>
+                            <input type="text" class="form-control" id="sale-price" value="" />
+                          </div>
+                          <div class="col-sm-12 mb-4">
+                            <div class="switch form-switch-custom switch-inline form-switch-danger">
+                              <input class="switch-input" type="checkbox" role="switch" id="pricing-includes-texes" />
+                              <label class="switch-label" for="pricing-includes-texes">Price includes taxes</label>
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <button class="btn btn-success w-100">Add Product</button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -376,13 +378,15 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="footer-wrapper">
-          <div class="footer-section f-section-1">
-            <p class="">© <span class="dynamic-year">2025</span> <a target="_blank" href="https://bluenightyazilim.com.tr">BlueNight Yazılım</a> Tarafından Tüm Hakları Saklıdır</p>
+        <footer>
+          <div class="footer-wrapper">
+            <div class="footer-section f-section-1">
+              <p class="">© <span class="dynamic-year">2025</span> <a target="_blank" href="https://bluenightyazilim.com.tr">BlueNight Yazılım</a> Tarafından Tüm Hakları Saklıdır</p>
+            </div>
           </div>
-        </div>
+        </footer>
       </div>
     </div>
 

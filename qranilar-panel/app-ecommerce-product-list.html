@@ -36,58 +36,6 @@
       </div>
     </div>
 
-    <div class="header-container container-xxl">
-      <header class="header navbar navbar-expand-sm expand-header">
-        <a href="javascript:void(0);" class="sidebarCollapse">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </a>
-
-        <div class="search-animated toggle-search">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-          <form class="form-inline search-full form-inline search" role="search">
-            <div class="search-bar">
-              <input type="text" class="form-control search-form-control ml-lg-auto" placeholder="Ara..." />
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x search-close">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-              </svg>
-            </div>
-          </form>
-          <span class="badge badge-secondary"></span>
-        </div>
-
-        <ul class="navbar-item flex-row ms-lg-auto ms-0">
-          <li class="nav-item dropdown language-dropdown">
-            <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="language-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="../src/assets/img/1x1/tr.svg" class="flag-width" alt="flag" />
-            </a>
-            <div class="dropdown-menu position-absolute" aria-labelledby="language-dropdown">
-              <a class="dropdown-item d-flex" href="javascript:void(0);"><img src="../src/assets/img/1x1/us.svg" class="flag-width" alt="flag" /> <span class="align-self-center">&nbsp;English</span></a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown notification-dropdown">
-            <div class="dropdown-item user__log-out--pd">
-              <a href="auth-boxed-signin.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
-                  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                  <polyline points="16 17 21 12 16 7"></polyline>
-                  <line x1="21" y1="12" x2="9" y2="12"></line>
-                </svg>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </header>
-    </div>
-
     <div class="main-container" id="container">
       <div class="overlay"></div>
       <div class="search-overlay"></div>
@@ -249,674 +197,730 @@
         </div>
       </section>
 
-      <div id="content" class="main-content">
-        <div class="layout-px-spacing">
-          <div class="middle-content container-xxl p-0">
-            <div class="page-meta">
-              <nav class="breadcrumb-style-one" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">App</a></li>
-                  <li class="breadcrumb-item"><a href="#">Ecommerce</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">List</li>
-                </ol>
-              </nav>
+      <div id="content" class="main-content main__df">
+        <div class="header-container container-xxl">
+          <header class="header navbar navbar-expand-sm expand-header">
+            <a href="javascript:void(0);" class="sidebarCollapse">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </a>
+
+            <div class="search-animated toggle-search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <form class="form-inline search-full form-inline search" role="search">
+                <div class="search-bar">
+                  <input type="text" class="form-control search-form-control ml-lg-auto" placeholder="Ara..." />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x search-close">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </div>
+              </form>
+              <span class="badge badge-secondary"></span>
             </div>
 
-            <div class="row layout-top-spacing">
-              <div class="col-xl-12 col-lg-12 col-sm-12 layout-spacing">
-                <div class="widget-content widget-content-area br-8">
-                  <table id="ecommerce-list" class="table dt-table-hover" style="width: 100%">
-                    <thead>
-                      <tr>
-                        <th class="checkbox-column"></th>
-                        <th>Product</th>
-                        <th>Added on</th>
-                        <th>Status</th>
-                        <th>Price</th>
-                        <th class="no-content text-center">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-3.jpg" alt="Avatar" width="64" height="64" />
-                            </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Nike Green Shoes</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/04/25</td>
-                        <td><span class="badge badge-danger">Out of stock</span></td>
-                        <td>$61</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+            <ul class="navbar-item flex-row ms-lg-auto ms-0">
+              <li class="nav-item dropdown language-dropdown">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="language-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="../src/assets/img/1x1/tr.svg" class="flag-width" alt="flag" />
+                </a>
+                <div class="dropdown-menu position-absolute" aria-labelledby="language-dropdown">
+                  <a class="dropdown-item d-flex" href="javascript:void(0);"><img src="../src/assets/img/1x1/us.svg" class="flag-width" alt="flag" /> <span class="align-self-center">&nbsp;English</span></a>
+                </div>
+              </li>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-8.jpg" alt="Avatar" width="64" height="64" />
-                            </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Drone</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/07/25</td>
-                        <td><span class="badge badge-warning">Low Stock</span></td>
-                        <td>$63</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+              <li class="nav-item dropdown notification-dropdown">
+                <div class="dropdown-item user__log-out--pd">
+                  <a href="auth-boxed-signin.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
+                      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                      <polyline points="16 17 21 12 16 7"></polyline>
+                      <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </header>
+        </div>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-13.jpg" alt="Avatar" width="64" height="64" />
-                            </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Smart Cleaner</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/01/12</td>
-                        <td><span class="badge badge-success">In Stock</span></td>
-                        <td>$66</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+        <section class="section__wd">
+          <div class="layout-px-spacing">
+            <div class="middle-content container-xxl p-0">
+              <div class="page-meta">
+                <nav class="breadcrumb-style-one" aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">App</a></li>
+                    <li class="breadcrumb-item"><a href="#">Ecommerce</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">List</li>
+                  </ol>
+                </nav>
+              </div>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+              <div class="row layout-top-spacing">
+                <div class="col-xl-12 col-lg-12 col-sm-12 layout-spacing">
+                  <div class="widget-content widget-content-area br-8">
+                    <table id="ecommerce-list" class="table dt-table-hover" style="width: 100%">
+                      <thead>
+                        <tr>
+                          <th class="checkbox-column"></th>
+                          <th>Product</th>
+                          <th>Added on</th>
+                          <th>Status</th>
+                          <th>Price</th>
+                          <th class="no-content text-center">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-3.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Nike Green Shoes</span>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-4.jpg" alt="Avatar" width="64" height="64" />
-                            </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Camera</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/03/29</td>
-                        <td><span class="badge badge-danger">Out of stock</span></td>
-                        <td>$22</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/04/25</td>
+                          <td><span class="badge badge-danger">Out of stock</span></td>
+                          <td>$61</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-5.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-8.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Drone</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Nike Shoes</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/11/28</td>
-                        <td><span class="badge badge-warning">Low Stock</span></td>
-                        <td>$33</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/07/25</td>
+                          <td><span class="badge badge-warning">Low Stock</span></td>
+                          <td>$63</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>6</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-6.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-13.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Smart Cleaner</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">MicroPhone</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/12/02</td>
-                        <td><span class="badge badge-success">In Stock</span></td>
-                        <td>$61</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/01/12</td>
+                          <td><span class="badge badge-success">In Stock</span></td>
+                          <td>$66</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink6">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>7</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-7.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-4.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Camera</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Monitor</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/08/06</td>
-                        <td><span class="badge badge-success">In Stock</span></td>
-                        <td>$59</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/03/29</td>
+                          <td><span class="badge badge-danger">Out of stock</span></td>
+                          <td>$22</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink7">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>8</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-1.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-5.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Nike Shoes</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Shoes</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/10/14</td>
-                        <td><span class="badge badge-warning">Low Stock</span></td>
-                        <td>$55</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink8" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/11/28</td>
+                          <td><span class="badge badge-warning">Low Stock</span></td>
+                          <td>$33</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink8">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>9</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-9.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-6.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">MicroPhone</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Speakers</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/09/15</td>
-                        <td><span class="badge badge-success">In Stock</span></td>
-                        <td>$39</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink9" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/12/02</td>
+                          <td><span class="badge badge-success">In Stock</span></td>
+                          <td>$61</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink9">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink6">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>10</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-10.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-7.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Monitor</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">XBox</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/12/13</td>
-                        <td><span class="badge badge-danger">Out of stock</span></td>
-                        <td>$23</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink10" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/08/06</td>
+                          <td><span class="badge badge-success">In Stock</span></td>
+                          <td>$59</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink10">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink7">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>12</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-11.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-1.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Shoes</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Phone</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2013/03/03</td>
-                        <td><span class="badge badge-danger">Out of stock</span></td>
-                        <td>$22</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink11" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/10/14</td>
+                          <td><span class="badge badge-warning">Low Stock</span></td>
+                          <td>$55</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink8" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink11">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink8">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>13</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-12.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-9.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Speakers</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Selfi Stick</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/10/16</td>
-                        <td><span class="badge badge-success">In Stock</span></td>
-                        <td>$36</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink12" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/09/15</td>
+                          <td><span class="badge badge-success">In Stock</span></td>
+                          <td>$39</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink9" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink12">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink9">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>17</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-14.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-10.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">XBox</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Sunglasses</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/06/09</td>
-                        <td><span class="badge badge-success">In Stock</span></td>
-                        <td>$64</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink19" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/12/13</td>
+                          <td><span class="badge badge-danger">Out of stock</span></td>
+                          <td>$23</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink10" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink19">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink10">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>18</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-15.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-11.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Phone</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Flashlight</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/04/10</td>
-                        <td><span class="badge badge-success">In Stock</span></td>
-                        <td>$59</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink20" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2013/03/03</td>
+                          <td><span class="badge badge-danger">Out of stock</span></td>
+                          <td>$22</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink11" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink20">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink11">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>20</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-16.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>13</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-12.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Selfi Stick</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Smart Watch</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/09/26</td>
-                        <td><span class="badge badge-danger">Out of stock</span></td>
-                        <td>$35</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink21" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/10/16</td>
+                          <td><span class="badge badge-success">In Stock</span></td>
+                          <td>$36</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink12" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink21">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink12">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>21</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-17.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>17</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-14.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Sunglasses</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Lamp</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/09/03</td>
-                        <td><span class="badge badge-success">In Stock</span></td>
-                        <td>$30</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink22" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/06/09</td>
+                          <td><span class="badge badge-success">In Stock</span></td>
+                          <td>$64</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink19" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink22">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink19">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>22</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-18.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>18</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-15.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Flashlight</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Tablet</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/06/25</td>
-                        <td><span class="badge badge-success">In Stock</span></td>
-                        <td>$40</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink23" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/04/10</td>
+                          <td><span class="badge badge-success">In Stock</span></td>
+                          <td>$59</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink20" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink23">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink20">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>23</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-19.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>20</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-16.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Smart Watch</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Chair</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/12/12</td>
-                        <td><span class="badge badge-success">In Stock</span></td>
-                        <td>$21</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink24" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/09/26</td>
+                          <td><span class="badge badge-danger">Out of stock</span></td>
+                          <td>$35</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink21" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink24">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink21">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>26</td>
-                        <td>
-                          <div class="d-flex justify-content-left align-items-center">
-                            <div class="avatar me-3">
-                              <img src="../src/assets/img/product-14.jpg" alt="Avatar" width="64" height="64" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>21</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-17.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Lamp</span>
+                              </div>
                             </div>
-                            <div class="d-flex flex-column">
-                              <span class="text-truncate fw-bold">Sunglasses</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td>2024/12/22</td>
-                        <td><span class="badge badge-danger">Out of stock</span></td>
-                        <td>$42</td>
-                        <td class="text-center">
-                          <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink25" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                              </svg>
-                            </a>
+                          </td>
+                          <td>2024/09/03</td>
+                          <td><span class="badge badge-success">In Stock</span></td>
+                          <td>$30</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink22" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink25">
-                              <a class="dropdown-item" href="javascript:void(0);">View</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink22">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>22</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-18.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Tablet</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>2024/06/25</td>
+                          <td><span class="badge badge-success">In Stock</span></td>
+                          <td>$40</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink23" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
+
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink23">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>23</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-19.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Chair</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>2024/12/12</td>
+                          <td><span class="badge badge-success">In Stock</span></td>
+                          <td>$21</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink24" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
+
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink24">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>26</td>
+                          <td>
+                            <div class="d-flex justify-content-left align-items-center">
+                              <div class="avatar me-3">
+                                <img src="../src/assets/img/product-14.jpg" alt="Avatar" width="64" height="64" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                <span class="text-truncate fw-bold">Sunglasses</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>2024/12/22</td>
+                          <td><span class="badge badge-danger">Out of stock</span></td>
+                          <td>$42</td>
+                          <td class="text-center">
+                            <div class="dropdown">
+                              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink25" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                  <circle cx="12" cy="12" r="1"></circle>
+                                  <circle cx="19" cy="12" r="1"></circle>
+                                  <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                              </a>
+
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink25">
+                                <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="footer-wrapper">
-          <div class="footer-section f-section-1">
-            <p class="">© <span class="dynamic-year">2025</span> <a target="_blank" href="https://bluenightyazilim.com.tr">BlueNight Yazılım</a> Tarafından Tüm Hakları Saklıdır</p>
+        <footer>
+          <div class="footer-wrapper">
+            <div class="footer-section f-section-1">
+              <p class="">© <span class="dynamic-year">2025</span> <a target="_blank" href="https://bluenightyazilim.com.tr">BlueNight Yazılım</a> Tarafından Tüm Hakları Saklıdır</p>
+            </div>
           </div>
-        </div>
+        </footer>
       </div>
     </div>
 
