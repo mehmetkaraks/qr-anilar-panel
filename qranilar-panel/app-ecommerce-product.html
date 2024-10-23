@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
-    <title>Şablon Detay - QrAnılar</title>
+    <title>Şablon Düzenle - QrAnılar</title>
     <link rel="icon" type="image/x-icon" href="../src/assets/img/logo/favicon.png" />
     <link href="../layouts/vertical-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/vertical-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
@@ -15,18 +15,22 @@
     <link href="../layouts/vertical-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/vertical-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
 
-    <link href="../src/assets/css/light/components/accordions.css" rel="stylesheet" type="text/css" />
-    <link href="../src/assets/css/dark/components/accordions.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../src/plugins/src/filepond/filepond.min.css" />
+    <link rel="stylesheet" href="../src/plugins/src/filepond/FilePondPluginImagePreview.min.css" />
+    <link rel="stylesheet" type="text/css" href="../src/plugins/src/tagify/tagify.css" />
 
-    <link rel="stylesheet" type="text/css" href="../src/plugins/src/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" />
-    <link rel="stylesheet" type="text/css" href="../src/plugins/src/glightbox/glightbox.min.css" />
-    <link rel="stylesheet" type="text/css" href="../src/plugins/src/splide/splide.min.css" />
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/forms/switches.css" />
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/editors/quill/quill.snow.css" />
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/tagify/custom-tagify.css" />
+    <link href="../src/plugins/css/light/filepond/custom-filepond.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/components/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/apps/ecommerce-details.css" />
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/dark/forms/switches.css" />
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/editors/quill/quill.snow.css" />
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/tagify/custom-tagify.css" />
+    <link href="../src/plugins/css/dark/filepond/custom-filepond.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" type="text/css" href="../src/assets/css/dark/components/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="../src/assets/css/dark/apps/ecommerce-details.css" />
+    <link rel="stylesheet" href="../src/assets/css/light/apps/ecommerce-create.css" />
+    <link rel="stylesheet" href="../src/assets/css/dark/apps/ecommerce-create.css" />
     <link href="../src/assets/css/dark/custom.css" rel="stylesheet" type="text/css" />
   </head>
   <body class="">
@@ -251,20 +255,31 @@
             </ul>
           </header>
         </div>
-
-        <section class="section__df">
+        <section class="section__wd">
           <div class="layout-px-spacing">
             <div class="middle-content container-xxl p-0">
-              <div class="row layout-top-spacing">
-                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-4">
+              <div class="row mb-4 layout-spacing layout-top-spacing">
+                <div class="col-xxl-9 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="widget-content widget-content-area ecommerce-create-section">
+                    <div class="row mb-4">
+                      <div class="col-sm-12">
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Organizasyon Adı" value="" />
+                      </div>
+                    </div>
 
-
-                  
+                    <div class="row mb-4">
+                      <div class="col-sm-12">
+                        <label>Notunuz</label>
+                        <div id="product-description"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
         <footer>
           <div class="footer-wrapper">
             <div class="footer-section f-section-1">
@@ -282,9 +297,24 @@
     <script src="../src/plugins/src/waves/waves.min.js"></script>
     <script src="../layouts/vertical-dark-menu/app.js"></script>
 
-    <script src="../src/plugins/src/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
-    <script src="../src/plugins/src/glightbox/glightbox.min.js"></script>
-    <script src="../src/plugins/src/splide/splide.min.js"></script>
-    <script src="../src/assets/js/apps/ecommerce-details.js"></script>
+    <script src="../src/plugins/src/highlight/highlight.pack.js"></script>
+    <script src="../src/assets/js/custom.js"></script>
+
+    <script src="../src/plugins/src/editors/quill/quill.js"></script>
+    <script src="../src/plugins/src/filepond/filepond.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginFileValidateType.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImageExifOrientation.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImagePreview.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImageCrop.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImageResize.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImageTransform.min.js"></script>
+    <script src="../src/plugins/src/filepond/filepondPluginFileValidateSize.min.js"></script>
+
+    <script src="../src/plugins/src/tagify/tagify.min.js"></script>
+    <script src="../src/assets/js/apps/ecommerce-create.js"></script>
+
+    <script>
+      ecommerce.addFiles("../src/assets/img/product-1.jpg", "../src/assets/img/product-3.jpg", "../src/assets/img/product-5.jpg");
+    </script>
   </body>
 </html>
