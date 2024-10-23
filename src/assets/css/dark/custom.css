@@ -52,17 +52,17 @@ body.dark #content {
   margin-top: 0px;
 }
 
-.section__wd{
-    width: 100% !important;
+.section__wd {
+  width: 100% !important;
 }
 
 /*?---------------------------Album--Pages---------------------------*/
 
 .main__df {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main-content {
@@ -88,8 +88,23 @@ body.dark #content {
   margin-bottom: 0 !important;
 }
 
+/*?---------------------------Album--detail--Pages---------------------------*/
+
+body.dark .card {
+  border: 1px solid #060818;
+  border-radius: 10px;
+  background: #060818;
+  box-shadow: none;
+}
+
+.card__video--pd {
+  padding: 0 !important;
+}
+
+.ratio-16x9 {
+  --bs-aspect-ratio: 66.25% !important;
+}
+
 /*?---------------------------Clendar--Pages---------------------------*/
-
-
 
 /*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJjdXN0b20uc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIiXSwiZmlsZSI6ImN1c3RvbS5jc3MifQ== */
