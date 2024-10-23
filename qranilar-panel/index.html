@@ -29,58 +29,6 @@
       </div>
     </div>
 
-    <div class="header-container container-xxl">
-      <header class="header navbar navbar-expand-sm expand-header">
-        <a href="javascript:void(0);" class="sidebarCollapse">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </a>
-
-        <div class="search-animated toggle-search">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-          <form class="form-inline search-full form-inline search" role="search">
-            <div class="search-bar">
-              <input type="text" class="form-control search-form-control ml-lg-auto" placeholder="Ara..." />
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x search-close">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-              </svg>
-            </div>
-          </form>
-          <span class="badge badge-secondary"></span>
-        </div>
-
-        <ul class="navbar-item flex-row ms-lg-auto ms-0">
-          <li class="nav-item dropdown language-dropdown">
-            <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="language-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="../src/assets/img/1x1/tr.svg" class="flag-width" alt="flag" />
-            </a>
-            <div class="dropdown-menu position-absolute" aria-labelledby="language-dropdown">
-              <a class="dropdown-item d-flex" href="javascript:void(0);"><img src="../src/assets/img/1x1/us.svg" class="flag-width" alt="flag" /> <span class="align-self-center">&nbsp;English</span></a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown notification-dropdown">
-            <div class="dropdown-item user__log-out--pd">
-              <a href="auth-boxed-signin.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
-                  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                  <polyline points="16 17 21 12 16 7"></polyline>
-                  <line x1="21" y1="12" x2="9" y2="12"></line>
-                </svg>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </header>
-    </div>
-
     <div class="main-container" id="container">
       <div class="overlay"></div>
       <div class="search-overlay"></div>
@@ -242,15 +190,365 @@
         </div>
       </section>
 
-      <section class="main__lf">
-        <div id="content" class="main-content footer-wrapper__mg">
-          <div class="footer-wrapper__pd">
-            <div class="footer-section f-section-1">
-              <p class="">© <span class="dynamic-year">2025 QrAnılar | </span> <a target="_blank" href="https://bluenightyazilim.com.tr">BlueNight Yazılım</a> Tarafından Tüm Hakları Saklıdır</p>
+      <div id="content" class="main-content main__df">
+        <div class="header-container container-xxl">
+          <header class="header navbar navbar-expand-sm expand-header">
+            <a href="javascript:void(0);" class="sidebarCollapse">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </a>
+
+            <div class="search-animated toggle-search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <form class="form-inline search-full form-inline search" role="search">
+                <div class="search-bar">
+                  <input type="text" class="form-control search-form-control ml-lg-auto" placeholder="Ara..." />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x search-close">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </div>
+              </form>
+              <span class="badge badge-secondary"></span>
+            </div>
+
+            <ul class="navbar-item flex-row ms-lg-auto ms-0">
+              <li class="nav-item dropdown language-dropdown">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="language-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="../src/assets/img/1x1/tr.svg" class="flag-width" alt="flag" />
+                </a>
+                <div class="dropdown-menu position-absolute" aria-labelledby="language-dropdown">
+                  <a class="dropdown-item d-flex" href="javascript:void(0);"><img src="../src/assets/img/1x1/us.svg" class="flag-width" alt="flag" /> <span class="align-self-center">&nbsp;English</span></a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown notification-dropdown">
+                <div class="dropdown-item user__log-out--pd">
+                  <a href="auth-boxed-signin.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
+                      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                      <polyline points="16 17 21 12 16 7"></polyline>
+                      <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </header>
+        </div>
+
+        <section class="section__wd">
+          <div class="layout-px-spacing">
+            <div class="middle-content container-xxl p-0">
+              <div class="row layout-top-spacing">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 layout-spacing">
+                  <div class="widget widget-t-sales-widget widget-m-sales">
+                    <div class="media">
+                      <div class="icon ml-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <p class="widget-text">Organic</p>
+                        <p class="widget-numeric-value">1,700</p>
+                      </div>
+                    </div>
+                    <div class="d-flex w-bottom">
+                      <p class="widget-total-stats">+16% this week</p>
+                      <div class="task-action">
+                        <div class="dropdown">
+                          <a class="dropdown-toggle" href="#" role="button" id="statistics" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                              <circle cx="12" cy="12" r="1"></circle>
+                              <circle cx="19" cy="12" r="1"></circle>
+                              <circle cx="5" cy="12" r="1"></circle>
+                            </svg>
+                          </a>
+
+                          <div class="dropdown-menu left" aria-labelledby="statistics" style="will-change: transform">
+                            <a class="dropdown-item" href="javascript:void(0);">Monthly</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Weekly</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Yearly</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 layout-spacing">
+                  <div class="widget widget-t-sales-widget widget-m-orders">
+                    <div class="media">
+                      <div class="icon ml-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <line x1="2" y1="12" x2="22" y2="12"></line>
+                          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <p class="widget-text">Direct</p>
+                        <p class="widget-numeric-value">1,560</p>
+                      </div>
+                    </div>
+                    <div class="d-flex w-bottom">
+                      <p class="widget-total-stats">-10% this week</p>
+                      <div class="task-action">
+                        <div class="dropdown">
+                          <a class="dropdown-toggle" href="#" role="button" id="statistics" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                              <circle cx="12" cy="12" r="1"></circle>
+                              <circle cx="19" cy="12" r="1"></circle>
+                              <circle cx="5" cy="12" r="1"></circle>
+                            </svg>
+                          </a>
+
+                          <div class="dropdown-menu left" aria-labelledby="statistics" style="will-change: transform">
+                            <a class="dropdown-item" href="javascript:void(0);">Monthly</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Weekly</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Yearly</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 layout-spacing">
+                  <div class="widget widget-t-sales-widget widget-m-customers">
+                    <div class="media">
+                      <div class="icon ml-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+                          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <p class="widget-text">Referral</p>
+                        <p class="widget-numeric-value">1,900</p>
+                      </div>
+                    </div>
+                    <div class="d-flex w-bottom">
+                      <p class="widget-total-stats">+30% this week</p>
+                      <div class="task-action">
+                        <div class="dropdown">
+                          <a class="dropdown-toggle" href="#" role="button" id="statistics" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                              <circle cx="12" cy="12" r="1"></circle>
+                              <circle cx="19" cy="12" r="1"></circle>
+                              <circle cx="5" cy="12" r="1"></circle>
+                            </svg>
+                          </a>
+
+                          <div class="dropdown-menu left" aria-labelledby="statistics" style="will-change: transform">
+                            <a class="dropdown-item" href="javascript:void(0);">Monthly</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Weekly</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Yearly</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 layout-spacing">
+                  <div class="widget widget-t-sales-widget widget-m-income">
+                    <div class="media">
+                      <div class="icon ml-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone">
+                          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                          <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <p class="widget-text">Social</p>
+                        <p class="widget-numeric-value">1,390</p>
+                      </div>
+                    </div>
+                    <div class="d-flex w-bottom">
+                      <p class="widget-total-stats">+4% this week</p>
+                      <div class="task-action">
+                        <div class="dropdown">
+                          <a class="dropdown-toggle" href="#" role="button" id="statistics" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                              <circle cx="12" cy="12" r="1"></circle>
+                              <circle cx="19" cy="12" r="1"></circle>
+                              <circle cx="5" cy="12" r="1"></circle>
+                            </svg>
+                          </a>
+
+                          <div class="dropdown-menu left" aria-labelledby="statistics" style="will-change: transform">
+                            <a class="dropdown-item" href="javascript:void(0);">Monthly</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Weekly</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Yearly</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
+                  <div class="widget widget-seven">
+                    <div class="widget-heading">
+                      <h6 class="">Statistics</h6>
+                      <div class="task-action">
+                        <div class="dropdown">
+                          <a class="dropdown-toggle" href="#" role="button" id="statistics" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                              <circle cx="12" cy="12" r="1"></circle>
+                              <circle cx="19" cy="12" r="1"></circle>
+                              <circle cx="5" cy="12" r="1"></circle>
+                            </svg>
+                          </a>
+
+                          <div class="dropdown-menu left" aria-labelledby="statistics" style="will-change: transform">
+                            <a class="dropdown-item" href="javascript:void(0);">View</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-chart">
+                      <div class="w-chart-section t-visits">
+                        <div class="w-chart-render-one">
+                          <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                              <line x1="18" y1="20" x2="18" y2="10"></line>
+                              <line x1="12" y1="20" x2="12" y2="4"></line>
+                              <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="w-detail">
+                          <p class="w-title">Total Visits</p>
+                          <p class="w-stats">423,964</p>
+                        </div>
+                      </div>
+
+                      <div class="w-chart-section p-visits">
+                        <div class="w-chart-render-one">
+                          <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign">
+                              <line x1="12" y1="1" x2="12" y2="23"></line>
+                              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="w-detail">
+                          <p class="w-title">Paid Visits</p>
+                          <p class="w-stats">7,929</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-5 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
+                  <div class="widget widget-card-four">
+                    <div class="widget-content">
+                      <div class="w-header">
+                        <div class="w-info">
+                          <h6 class="value">Expenses</h6>
+                        </div>
+                        <div class="task-action">
+                          <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" id="expenses" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                                <circle cx="5" cy="12" r="1"></circle>
+                              </svg>
+                            </a>
+
+                            <div class="dropdown-menu left" aria-labelledby="expenses" style="will-change: transform">
+                              <a class="dropdown-item" href="javascript:void(0);">This Week</a>
+                              <a class="dropdown-item" href="javascript:void(0);">Last Week</a>
+                              <a class="dropdown-item" href="javascript:void(0);">Last Month</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="w-content">
+                        <div class="w-info">
+                          <p class="value">
+                            $ 45,141 <span>this week</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up">
+                              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                              <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="w-progress-stats">
+                        <div class="progress">
+                          <div class="progress-bar bg-gradient-secondary" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="">
+                          <div class="w-icon">
+                            <p>57%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                  <div class="widget widget-card-five">
+                    <div class="widget-content">
+                      <div class="account-box">
+                        <div class="info-box">
+                          <div class="icon">
+                            <span>
+                              <img src="../src/assets/img/money-bag.png" alt="money-bag" />
+                            </span>
+                          </div>
+
+                          <div class="balance-info">
+                            <h6>Total Balance</h6>
+                            <p>$41,741.42</p>
+                          </div>
+                        </div>
+
+                        <div class="card-bottom-section">
+                          <div>
+                            <span class="badge badge-light-success"
+                              >+ 13.6%
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline></svg
+                            ></span>
+                          </div>
+                          <a href="javascript:void(0);" class="">View Report</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <footer>
+          <div class="footer-wrapper">
+            <div class="footer-section f-section-1">
+              <p class="">© <span class="dynamic-year">2025</span> <a target="_blank" href="https://bluenightyazilim.com.tr">BlueNight Yazılım</a> Tarafından Tüm Hakları Saklıdır</p>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
 
     <script src="../src/bootstrap/js/bootstrap.bundle.min.js"></script>
