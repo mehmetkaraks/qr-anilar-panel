@@ -14,17 +14,15 @@
     <link href="../src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/vertical-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/vertical-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
-    
+
     <link href="../src/assets/css/light/components/modal.css" rel="stylesheet" type="text/css" />
     <link href="../src/assets/css/light/apps/contacts.css" rel="stylesheet" type="text/css" />
 
     <link href="../src/assets/css/dark/components/modal.css" rel="stylesheet" type="text/css" />
     <link href="../src/assets/css/dark/apps/contacts.css" rel="stylesheet" type="text/css" />
-     <link href="../src/assets/css/dark/custom.css" rel="stylesheet" type="text/css" />
-     
+    <link href="../src/assets/css/dark/custom.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    
     <div id="load_screen">
       <div class="loader">
         <div class="loader-content">
@@ -32,11 +30,11 @@
         </div>
       </div>
     </div>
-    
+
     <div class="main-container" id="container">
       <div class="overlay"></div>
       <div class="search-overlay"></div>
-      
+
       <section class="sidebar__wd">
         <div class="sidebar-wrapper sidebar-theme">
           <nav id="sidebar">
@@ -193,7 +191,7 @@
           </nav>
         </div>
       </section>
-      
+
       <div id="content" class="main-content main__df">
         <div class="header-container container-xxl">
           <header class="header navbar navbar-expand-sm expand-header">
@@ -246,6 +244,7 @@
             </ul>
           </header>
         </div>
+
         <section class="section__wd">
           <div class="layout-px-spacing">
             <div class="middle-content container-xxl p-0">
@@ -266,31 +265,6 @@
                       </div>
 
                       <div class="col-xl-8 col-lg-7 col-md-7 col-sm-5 text-sm-right text-center layout-spacing align-self-center">
-                        <div class="d-flex justify-content-sm-end justify-content-center">
-                          <svg id="btn-add-contact" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
-                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="8.5" cy="7" r="4"></circle>
-                            <line x1="20" y1="8" x2="20" y2="14"></line>
-                            <line x1="23" y1="11" x2="17" y2="11"></line>
-                          </svg>
-
-                          <div class="switch align-self-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list view-list active-view">
-                              <line x1="8" y1="6" x2="21" y2="6"></line>
-                              <line x1="8" y1="12" x2="21" y2="12"></line>
-                              <line x1="8" y1="18" x2="21" y2="18"></line>
-                              <line x1="3" y1="6" x2="3" y2="6"></line>
-                              <line x1="3" y1="12" x2="3" y2="12"></line>
-                              <line x1="3" y1="18" x2="3" y2="18"></line>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid view-grid">
-                              <rect x="3" y="3" width="7" height="7"></rect>
-                              <rect x="14" y="3" width="7" height="7"></rect>
-                              <rect x="14" y="14" width="7" height="7"></rect>
-                              <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                          </div>
-                        </div>
 
                         <div class="modal fade" id="addContactModal" tabindex="-1" role="dialog" aria-labelledby="addContactModalTitle" aria-hidden="true">
                           <div class="modal-dialog modal-dialog-centered" role="document">
@@ -311,15 +285,9 @@
                                   <div class="add-contact-content">
                                     <form id="addContactModalTitle">
                                       <div class="row">
-                                        <div class="col-md-6 mb-3">
+                                        <div class="col-md-12 mb-3">
                                           <div class="contact-name">
-                                            <input type="text" id="c-name" class="form-control" placeholder="Ad" />
-                                            <span class="validation-text"></span>
-                                          </div>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                          <div class="contact-surname">
-                                            <input type="text" id="c-surname" class="form-control" placeholder="Soyad" />
+                                            <input type="text" id="c-name" class="form-control" placeholder="Ad Soyad" />
                                             <span class="validation-text"></span>
                                           </div>
                                         </div>
@@ -390,6 +358,7 @@
                             </svg>
                           </div>
                         </div>
+
                       </div>
 
                       <div class="items">
@@ -401,8 +370,7 @@
                               </div>
                             </div>
                             <div class="user-meta-info">
-                              <p class="user-name" data-name="Mehmet" style="display: inline">Mehmet</p>
-                              <p class="user-surname" data-name="Karakuş" style="display: inline">Karakuş</p>
+                              <p class="user-name" data-name="Mehmet Karakuş" style="display: inline">Mehmet Karakuş</p>
                             </div>
                           </div>
 
@@ -446,9 +414,8 @@
           </div>
         </footer>
       </div>
-      
     </div>
-    
+
     <script src="../src/plugins/src/global/vendors.min.js"></script>
     <script src="../src/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
@@ -456,25 +423,22 @@
     <script src="../src/plugins/src/waves/waves.min.js"></script>
     <script src="../layouts/vertical-dark-menu/app.js"></script>
     <script src="../src/assets/js/custom.js"></script>
-    
+
     <script src="../src/plugins/src/jquery-ui/jquery-ui.min.js"></script>
     <script src="../src/assets/js/apps/contact.js"></script>
     <script>
-      
       document.getElementById("btn-edit-contact").addEventListener("click", function () {
-        
         var editTitle = document.getElementById("addContactModalTitleLabel2");
         editTitle.style.display = "block";
-        
+
         var addTitle = document.getElementById("addContactModalTitleLabel1");
         addTitle.style.display = "none";
       });
-      
+
       document.getElementById("btn-add-contact").addEventListener("click", function () {
-        
         var addTitle = document.getElementById("addContactModalTitleLabel1");
         addTitle.style.display = "block";
-        
+
         var editTitle = document.getElementById("addContactModalTitleLabel2");
         editTitle.style.display = "none";
       });
