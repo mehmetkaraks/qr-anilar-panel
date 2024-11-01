@@ -3,7 +3,7 @@
  *    Product Description Editor 
  * ===================================
 */
-var quill = new Quill('#product-description', {
+var quill = new quill('#product-description', {
     modules: {
         toolbar: [
         [{ header: [1, 2, false] }],
