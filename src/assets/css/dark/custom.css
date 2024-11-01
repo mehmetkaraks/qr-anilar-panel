@@ -91,7 +91,7 @@ body.dark #content {
 /*?---------------------------Album--detail--Pages---------------------------*/
 
 body.dark .card {
-  border: 1px solid #060818;
+  border: 1px solid #191e3a;
   border-radius: 10px;
   background: #060818;
   box-shadow: none;
@@ -128,4 +128,10 @@ button.upgrade__package {
 .nav-tabs__menu--df {
   display: flex;
   justify-content: center;
+}
+
+.register__institutional--hd {
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
