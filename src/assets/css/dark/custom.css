@@ -125,3 +125,7 @@ button.upgrade__package {
 
 /*?---------------------------signup---------------------------*/
 
+.nav-tabs__menu--df {
+  display: flex;
+  justify-content: center;
+}
