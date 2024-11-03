@@ -146,3 +146,9 @@ button.upgrade__package {
   display: flex;
   align-items: center;
 }
+
+
+.save__btn--df{
+ display: flex;
+ justify-content: end; 
+}
