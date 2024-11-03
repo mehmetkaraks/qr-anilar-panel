@@ -88,6 +88,10 @@ body.dark #content {
   margin-bottom: 0 !important;
 }
 
+.album__card--border {
+  border: none !important;
+}
+
 /*?---------------------------Album--detail--Pages---------------------------*/
 
 body.dark .card {
