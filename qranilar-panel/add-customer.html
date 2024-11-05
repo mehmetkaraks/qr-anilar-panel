@@ -253,185 +253,63 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                   <div class="doc-container">
                     <div class="row">
-                      <div class="col-xl-9">
-                        <div class="invoice-content">
-                          <div class="invoice-detail-body">
-                            <div class="invoice-detail-header">
-                              <div class="row justify-content-between">
-                                <div class="invoice-address-client">
-                                  <h4>Müşteri Bilgileri:</h4>
+                      <div class="invoice-content">
+                        <div class="invoice-detail-body">
+                          <div class="invoice-detail-header">
+                            <div class="row justify-content-between">
+                              <div class="invoice-address-client">
+                                <h4>Müşteri Bilgileri:</h4>
 
-                                  <div class="invoice-address-client-fields">
-                                    <div class="form-group row">
-                                      <label for="client-name" class="col-sm-4 col-form-label col-form-label-sm">İsim Soyisim</label>
-                                      <div class="col-sm-8">
-                                        <input type="text" class="form-control form-control-sm" id="client-name" placeholder="İsim Soyisim" />
+                                <div class="form__gr">
+                                  <div class="form__user-information">
+                                    <div class="">
+                                      <div class="form-group">
+                                        <div class="form__input">
+                                          <label for="client-name" class="col-sm-4 col-form-label col-form-label-sm">İsim Soyisim:</label>
+                                          <input type="text" class="form-control form-control-sm" id="client-name" placeholder="İsim Soyisim" />
+                                        </div>
                                       </div>
-                                    </div>
 
-                                    <div class="form-group row">
-                                      <label for="client-email" class="col-sm-4 col-form-label col-form-label-sm">E-posta</label>
-                                      <div class="col-sm-8">
-                                        <input type="text" class="form-control form-control-sm" id="client-email" placeholder="E-posta" />
+                                      <div class="form-group">
+                                        <div class="form__input">
+                                          <label for="client-email" class="col-sm-4 col-form-label col-form-label-sm">E-posta:</label>
+                                          <input type="text" class="form-control form-control-sm" id="client-email" placeholder="E-posta" />
+                                        </div>
                                       </div>
-                                    </div>
 
-                                    <div class="form-group row">
-                                      <label for="client-phone" class="col-sm-4 col-form-label col-form-label-sm">Telefon</label>
-                                      <div class="col-sm-8">
-                                        <input type="text" class="form-control form-control-sm" id="client-phone" placeholder="0 (555) 555 55 55" />
+                                      <div class="form-group">
+                                        <div class="form__input">
+                                          <label for="invoice-detail-notes" class="col-sm-4 col-form-label col-form-label-sm">Telefon:</label>
+                                          <input type="text" class="form-control form-control-sm" id="client-phone" placeholder="0 (555) 555 55 55" />
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
-                                </div>
-                              </div>
-                            </div>
 
-                            <div class="invoice-detail-note">
-                              <div class="row">
-                                <div class="col-md-12 align-self-center">
-                                  <div class="form-group row invoice-note">
-                                    <label for="invoice-detail-notes" class="col-sm-12 col-form-label col-form-label-sm">Adres:</label>
-                                    <div class="col-sm-12">
-                                      <textarea class="form-control" id="invoice-detail-notes" placeholder="Adres" style="height: 88px"></textarea>
+                                  <div class="form__user-adress">
+                                    <div class="">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                          <div class="form-group">
+                                            <label for="invoice-detail-notes" class="form__input col-form-label col-form-label-sm">Adres:</label>
+                                            <div class="form__input">
+                                              <textarea class="form-control" id="invoice-detail-notes" placeholder="Adres" style="height: 88px"></textarea>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="invoice-actions-btn">
-                              <div class="invoice-action-btn">
-                                <div class="row save__btn--df">
-                                  <div class="col-xl-4 col-md-4">
-                                    <a href="javascript:void(0);" class="btn btn-success btn-download">Kaydet</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-xl-3">
-                        <div class="invoice-actions">
-                          <div class="invoice-action-currency">
-                            <div class="form-group mb-0">
-                              <label>Currency</label>
-                              <div class="dropdown selectable-dropdown invoice-select">
-                                <a id="currencyDropdown" href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                  ><img src="../src/assets/img/flag-us.svg" class="flag-width" alt="flag" /> <span class="selectable-text">USD - US Dollar</span>
-                                  <span class="selectable-arrow"
-                                    ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                                      <polyline points="6 9 12 15 18 9"></polyline></svg></span
-                                ></a>
-                                <div class="dropdown-menu" aria-labelledby="currencyDropdown">
-                                  <a class="dropdown-item" data-img-value="../src/assets/img/flag-us.svg" data-value="USD - US Dollar" href="javascript:void(0);"><img src="../src/assets/img/flag-us.svg" class="flag-width" alt="flag" /> USD - US Dollar</a>
-                                  <a class="dropdown-item" data-img-value="../src/assets/img/flag-de.svg" data-value="EUR - Germany (Euro)" href="javascript:void(0);"><img src="../src/assets/img/flag-de.svg" class="flag-width" alt="flag" /> EUR - Germany (Euro)</a>
-                                  <a class="dropdown-item" data-img-value="../src/assets/img/flag-try.svg" data-value="TRY - Turkish Lira" href="javascript:void(0);"><img src="../src/assets/img/flag-try.svg" class="flag-width" alt="flag" /> TRY - Turkish Lira</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="invoice-action-tax">
-                            <h5>Tax</h5>
-
-                            <div class="invoice-action-tax-fields">
-                              <div class="row">
-                                <div class="col-6">
-                                  <div class="form-group mb-0">
-                                    <label>Type</label>
-
-                                    <div class="dropdown selectable-dropdown invoice-tax-select">
-                                      <a id="taxTypeDropdown" href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="selectable-text">None</span>
-                                        <span class="selectable-arrow"
-                                          ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                                            <polyline points="6 9 12 15 18 9"></polyline></svg></span
-                                      ></a>
-                                      <div class="dropdown-menu" aria-labelledby="taxTypeDropdown">
-                                        <a class="dropdown-item" data-value="Deducted" href="javascript:void(0);">Deducted</a>
-                                        <a class="dropdown-item" data-value="Per Item" href="javascript:void(0);">Per Item</a>
-                                        <a class="dropdown-item" data-value="On Total" href="javascript:void(0);">On Total</a>
-                                        <a class="dropdown-item" data-value="None" href="javascript:void(0);">None</a>
+                                    <div class="invoice-actions-btn">
+                                      <div class="invoice-action-btn">
+                                        <div class="row save__btn--df">
+                                          <div class="">
+                                            <a href="javascript:void(0);" class="btn btn-success btn-download">Kaydet</a>
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-
-                                <div class="col-6">
-                                  <div class="form-group mb-0 tax-rate-deducted" style="display: none">
-                                    <label for="rate1">Rate (%)</label>
-                                    <input type="number" class="form-control input-rate" id="rate1" placeholder="Rate" value="10" />
-                                  </div>
-
-                                  <div class="form-group mb-0 tax-rate-per-item" style="display: none">
-                                    <label for="rate2">Rate (%)</label>
-                                    <input type="number" class="form-control input-rate" id="rate2" placeholder="Rate" value="5" />
-                                  </div>
-
-                                  <div class="form-group mb-0 tax-rate-on-total" style="display: none">
-                                    <label for="rate3">Rate (%)</label>
-                                    <input type="number" class="form-control input-rate" id="rate3" placeholder="Rate" value="25" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="invoice-action-discount">
-                            <h5>Discount</h5>
-
-                            <div class="invoice-action-discount-fields">
-                              <div class="row">
-                                <div class="col-6">
-                                  <div class="form-group mb-0">
-                                    <label>Type</label>
-
-                                    <div class="dropdown selectable-dropdown invoice-discount-select">
-                                      <a id="discountDropdown" href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="selectable-text">None</span>
-                                        <span class="selectable-arrow"
-                                          ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                                            <polyline points="6 9 12 15 18 9"></polyline></svg></span
-                                      ></a>
-                                      <div class="dropdown-menu" aria-labelledby="discountDropdown">
-                                        <a class="dropdown-item" data-value="Percent" href="javascript:void(0);">Percent</a>
-                                        <a class="dropdown-item" data-value="Flat Amount" href="javascript:void(0);">Flat Amount</a>
-                                        <a class="dropdown-item" data-value="None" href="javascript:void(0);">None</a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="col-6">
-                                  <div class="form-group mb-0 discount-amount" style="display: none">
-                                    <label for="ratet1">Amount</label>
-                                    <input type="number" class="form-control input-rate" id="ratet1" placeholder="Rate" value="25" />
-                                  </div>
-
-                                  <div class="form-group mb-0 discount-percent" style="display: none">
-                                    <label for="ratet2">Percent</label>
-                                    <input type="number" class="form-control input-rate" id="ratet2" placeholder="Rate" value="10" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="invoice-actions-btn">
-                          <div class="invoice-action-btn">
-                            <div class="row">
-                              <div class="col-xl-12 col-md-4">
-                                <a href="javascript:void(0);" class="btn btn-primary btn-send">Send Invoice</a>
-                              </div>
-                              <div class="col-xl-12 col-md-4">
-                                <a href="./app-invoice-preview.html" class="btn btn-secondary btn-preview">Preview</a>
-                              </div>
-                              <div class="col-xl-12 col-md-4">
-                                <a href="javascript:void(0);" class="btn btn-success btn-download">Save</a>
                               </div>
                             </div>
                           </div>

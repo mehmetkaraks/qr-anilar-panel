@@ -147,6 +147,13 @@ button.upgrade__package {
   align-items: center;
 }
 
+/*?---------------------------add-customer---------------------------*/
+
+.form__gr{
+  display: grid;
+  grid-template-columns:repeat(2, 2fr);
+  gap: 50px;
+}
 
 .save__btn--df{
  display: flex;
