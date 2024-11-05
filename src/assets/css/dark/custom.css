@@ -159,3 +159,10 @@ button.upgrade__package {
  display: flex;
  justify-content: end; 
 }
+
+.corporate__packets--df{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
