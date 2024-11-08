@@ -149,20 +149,41 @@ button.upgrade__package {
 
 /*?---------------------------add-customer---------------------------*/
 
-.form__gr{
+.form__gr {
   display: grid;
-  grid-template-columns:repeat(2, 2fr);
+  grid-template-columns: repeat(2, 2fr);
   gap: 50px;
 }
 
-.save__btn--df{
- display: flex;
- justify-content: end; 
+.save__btn--df {
+  display: flex;
+  justify-content: end;
 }
 
-.corporate__packets--df{
+.corporate__packets--df {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-top: 20px;
+}
+
+/*?---------------------------packets---------------------------*/
+
+.packages__gr {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 30px;
+}
+
+body.dark .pricing-table-2 .pricing-plan-features ul li {
+  border-bottom: 1px solid #ffffff40;
+}
+
+body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
+  background: #2196f3;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: none;
 }
