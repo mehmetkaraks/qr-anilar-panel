@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
-    <title>Müşteri Listesi - QrAnılar</title>
+    <title>Biriysel Müşteriler - QrAnılar</title>
     <link rel="icon" type="image/x-icon" href="../../src/assets/img/logo/favicon.png" />
     <link href="../../layouts/vertical-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../../layouts/vertical-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
@@ -19,8 +19,10 @@
     <link rel="stylesheet" type="text/css" href="../../src/plugins/css/dark/table/datatable/dt-global_style.css" />
     <link href="../../src/assets/css/dark/apps/invoice-list.css" rel="stylesheet" type="text/css" />
     <link href="../../src/assets/css/dark/custom.css" rel="stylesheet" type="text/css" />
+     
   </head>
   <body>
+    
     <div id="load_screen">
       <div class="loader">
         <div class="loader-content">
@@ -28,19 +30,18 @@
         </div>
       </div>
     </div>
-
+    
     <div class="main-container" id="container">
       <div class="overlay"></div>
-      <div class="cs-overlay"></div>
       <div class="search-overlay"></div>
-
+      
       <section class="sidebar__wd">
         <div class="sidebar-wrapper sidebar-theme">
           <nav id="sidebar">
             <div class="navbar-nav theme-brand flex-row text-center">
               <div class="nav-logo">
                 <div class="nav-item theme-text">
-                  <a href="./corporate-customers-index.html" class="nav-link">
+                  <a href="./index.html" class="nav-link">
                     <img src="../../src/assets/img/logo/logo.png" alt="" />
                   </a>
                 </div>
@@ -63,7 +64,7 @@
             <div class="shadow-bottom"></div>
             <ul class="list-unstyled menu-categories" id="accordionExample">
               <li class="menu">
-                <a href="corporate-customers-index.html" class="dropdown-toggle">
+                <a href="index.html" class="dropdown-toggle">
                   <div class="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
                       <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -75,6 +76,30 @@
               </li>
 
               <li class="menu active">
+                <a href="individual-customers.html" aria-expanded="false" class="dropdown-toggle">
+                  <div class="">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Bireysel Müşteriler</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="menu">
+                <a href="corporate-customers.html" aria-expanded="false" class="dropdown-toggle">
+                  <div class="">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    <span>Kurumsal Müşteriler</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="menu">
                 <a href="./corporate-customers-list.html" aria-expanded="false" class="dropdown-toggle">
                   <div class="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users">
@@ -145,12 +170,12 @@
                   </div>
                 </a>
               </li>
-
+              
             </ul>
           </nav>
         </div>
       </section>
-
+      
       <div id="content" class="main-content main__df">
         <div class="header-container container-xxl">
           <header class="header navbar navbar-expand-sm expand-header">
@@ -362,8 +387,9 @@
           </div>
         </footer>
       </div>
+      
     </div>
-
+    
     <script src="../../src/plugins/src/global/vendors.min.js"></script>
     <script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
@@ -373,7 +399,26 @@
     <script src="../../src/assets/js/custom.js"></script>
     
     <script src="../../src/plugins/src/table/datatable/datatables.js"></script>
-    <script src="../../src/plugins/src/table/datatable/button-ext/dataTables.buttons.min.js"></script>
     <script src="../../src/assets/js/apps/invoice-list.js"></script>
+    <script>
+      
+      document.getElementById("btn-edit-contact").addEventListener("click", function () {
+        
+        var editTitle = document.getElementById("addContactModalTitleLabel2");
+        editTitle.style.display = "block";
+        
+        var addTitle = document.getElementById("addContactModalTitleLabel1");
+        addTitle.style.display = "none";
+      });
+      
+      document.getElementById("btn-add-contact").addEventListener("click", function () {
+        
+        var addTitle = document.getElementById("addContactModalTitleLabel1");
+        addTitle.style.display = "block";
+        
+        var editTitle = document.getElementById("addContactModalTitleLabel2");
+        editTitle.style.display = "none";
+      });
+    </script>
   </body>
 </html>

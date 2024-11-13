@@ -187,3 +187,16 @@ body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
   border-radius: 8px;
   box-shadow: none;
 }
+
+/*!---------------------------responsive---------------------------*/
+
+@media (max-width: 991px) {
+  .sidebar__wd {
+    width: 0;
+  }
+
+  .navbar {
+    background-color: #191e3a;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.04);
+  }
+}
