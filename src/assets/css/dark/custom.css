@@ -170,9 +170,24 @@ button.upgrade__package {
 /*?---------------------------packets---------------------------*/
 
 .packages__gr {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(3, 2fr);
-  gap: 30px;
+  justify-items: center;
+}
+
+.pricing-plan {
+  padding: 35px 35px;
+  position: relative;
+  color: #3b3f5c;
+  border: 1px solid rgba(25, 30, 58, 0.5411764706);
+  background-color: rgba(27, 46, 75, 0.3607843137);
+  border-radius: 8px;
+  width: 80%;
+}
+
+body.dark .pricing-table-2 .pricing-plan .pricing-header-section .pricing-header-pricing {
+  display: flex !important;
+  align-items: center;
 }
 
 body.dark .pricing-table-2 .pricing-plan-features ul li {
@@ -186,6 +201,17 @@ body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
   padding: 12px;
   border-radius: 8px;
   box-shadow: none;
+}
+
+/*?---------------------------create-event---------------------------*/
+
+.modal {
+  --bs-modal-width: 570px;
+}
+
+.eventlist__gr {
+  display: grid !important;
+  grid-template-columns: repeat(3, 2fr);
 }
 
 /*!---------------------------responsive---------------------------*/
