@@ -214,6 +214,30 @@ body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
   grid-template-columns: repeat(3, 2fr);
 }
 
+.customer__list{
+  padding: 0.3rem 1.25rem !important;
+}
+
+/*?---------------------------template-add---------------------------*/
+
+.template__add--img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 2px dashed #1b2e4b;
+    border-radius: 5px;
+    background-color: #1b2e4b#f9f9f9;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.template__add--img:hover {
+    border-color: #007bff;
+}
+
 /*!---------------------------responsive---------------------------*/
 
 @media (max-width: 991px) {

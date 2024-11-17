@@ -59,6 +59,6 @@ new Tagify(input)
 var input = document.querySelector('input[name=category]');
 
 new Tagify(input, {
-    whitelist: ["Themeforest","Admin","Dashboard","Laravel","Sale","Vue","React","Cork Admin"],
+    whitelist: ["Davetiye","Masa Kartı"],
     userInput: false
 })
