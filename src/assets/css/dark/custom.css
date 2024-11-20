@@ -251,6 +251,14 @@ body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
   border-color: #007bff;
 }
 
+/*?---------------------------order-pages---------------------------*/
+
+.orderpages__gr{
+  display: grid !important;
+  grid-template-columns: repeat(2, 2fr);
+  justify-items: center;
+}
+
 /*!---------------------------responsive---------------------------*/
 
 @media (max-width: 991px) {
