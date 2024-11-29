@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
-    <title>Etkinlik Oluştur - QrAnılar</title>
+    <title>Qr Kod Oluştur - QrAnılar</title>
     <link rel="icon" type="image/x-icon" href="../../src/assets/img/logo/favicon.png" />
     <link href="../../layouts/vertical-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../../layouts/vertical-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
@@ -192,75 +192,19 @@
 
         <section class="section__wd">
           <div class="layout-px-spacing create-event__df">
-            <div class="middle-content container-xxl p-0 create-event__table">
-              <div id="calendarContainer">
-                <div class="calendar-header">
-                  <button id="prevMonth">&lt;</button>
-                  <h2 id="monthYear"></h2>
-                  <button id="nextMonth">&gt;</button>
-                </div>
-                <div class="calendar-weekdays">
-                  <div>Paz</div>
-                  <div>Pzt</div>
-                  <div>Sal</div>
-                  <div>Çar</div>
-                  <div>Per</div>
-                  <div>Cum</div>
-                  <div>Cmt</div>
-                </div>
-                <div class="calendar-days" id="calendarDays"></div>
+            <div class="middle-content container-xxl p-0 qrcode__table">
+              <div class="user-data">
+                <h2>QR Kod Oluştur</h2>
+                <input type="email" class="user-email input" placeholder="E-posta..." />
+                <input type="text" class="user-password input" placeholder="Şifre..." />
+                <!-- Changed type to "text" -->
+                <button class="generate-qr-code">Oluştur</button>
               </div>
-              <div id="eventModal" class="modal hidden">
-                <div class="modal-content">
-                  <h2 id="selectedDate"></h2>
-                  <form id="eventForm">
-                    <input type="text" id="eventName" placeholder="Etkinlik Adı" required />
 
-                    <select id="eventCategory" required>
-                      <option value="" selected disabled>Kategori</option>
-                      <option value="Düğün">Düğün</option>
-                      <option value="Kına">Kına</option>
-                      <option value="Nişan">Nişan</option>
-                      <option value="Doğum Günü">Doğum Günü</option>
-                      <option value="Özel Gün">Özel Gün</option>
-                      <option value="Lansman">Lansman</option>
-                      <option value="Konser">Parti</option>
-                      <option value="Festival">Festival</option>
-                      <option value="Konser">Konser</option>
-                    </select>
-
-                    <select id="eventClock" required>
-                      <option value="" selected disabled>Etkinlik Saati</option>
-                      <option value="00.00">00.00</option>
-                      <option value="01.00">01.00</option>
-                      <option value="02.00">02.00</option>
-                      <option value="03.00">03.00</option>
-                      <option value="04.00">04.00</option>
-                      <option value="05.00">05.00</option>
-                      <option value="06.00">06.00</option>
-                      <option value="07.00">07.00</option>
-                      <option value="08.00">08.00</option>
-                      <option value="09.00">09.00</option>
-                      <option value="10.00">10.00</option>
-                      <option value="11.00">11.00</option>
-                      <option value="12.00">12.00</option>
-                      <option value="13.00">13.00</option>
-                      <option value="14.00">14.00</option>
-                      <option value="15.00">15.00</option>
-                      <option value="16.00">16.00</option>
-                      <option value="17.00">17.00</option>
-                      <option value="18.00">18.00</option>
-                      <option value="19.00">19.00</option>
-                      <option value="20.00">20.00</option>
-                      <option value="21.00">21.00</option>
-                      <option value="22.00">22.00</option>
-                      <option value="23.00">23.00</option>
-                             
-                    </select>
-
-                    <button type="button" id="continueButton">Devam</button>
-                  </form>
-                </div>
+              <div class="qr-canvas">
+                <h2>QR Kod</h2>
+                <div class="loading"></div>
+                <img src="" alt="" class="qr-image" />
               </div>
             </div>
           </div>
@@ -286,6 +230,6 @@
     <script src="../../src/plugins/src/uuid/uuid4.min.js"></script>
 
     <script src="../../src/plugins/src/fullcalendar/custom-fullcalendar.js"></script>
-    <script src="../../src/assets/js/create-event.js"></script>
+    <script src="../../src/assets/js/qrcode.js"></script>
   </body>
 </html>

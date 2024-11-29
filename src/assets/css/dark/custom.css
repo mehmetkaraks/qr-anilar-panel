@@ -218,12 +218,12 @@ body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
 
 /*?---------------------------create-event---------------------------*/
 
-.create-event__df{
+.create-event__df {
   display: flex;
   align-items: center;
 }
 
-.create-event__table{
+.create-event__table {
   display: flex;
   justify-content: center;
 }
@@ -386,38 +386,126 @@ body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
   background-color: var(--button-hover);
 }
 
- .time-selector {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
+.time-selector {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 
-  .time-selector h3 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
-  }
+.time-selector h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
 
-  .time-selector div {
-    width: 100%;
-    text-align: center;
-  }
+.time-selector div {
+  width: 100%;
+  text-align: center;
+}
 
-  .time-button {
-    padding: 10px;
-    border: none;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    width: 100%;
-  }
+.time-button {
+  padding: 10px;
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
 
-  .time-button:hover {
-    background-color: #c0c0c0;
+.time-button:hover {
+  background-color: #c0c0c0;
+}
+
+/*?---------------------------qrcode---------------------------*/
+
+.qrcode__table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.user-data {
+  height: 20rem;
+  width: 21rem;
+  background-color: #0e1726 !important;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.user-data > h2 {
+  margin-bottom: 1rem;
+}
+.input,
+.generate-qr-code {
+  height: 2.7rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.7rem;
+  font-size: 0.9rem;
+}
+.input {
+  padding: 0 1rem 0 0.5rem;
+  background-color: #060818;
+  color: white;
+  /* font-size: 0.95rem; */
+}
+.generate-qr-code {
+  background-color: #1DA1F2;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+.generate-qr-code:hover {
+  background-color: #1A8CD8;
+}
+.qr-canvas {
+  background-color: white;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 1rem;
+  position: relative;
+}
+.qr-canvas > h2 {
+  color: black;
+  text-align: center;
+  margin: 1rem;
+}
+.qr-image {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.loading {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  border: 7px solid var(--blueColor);
+  border-top-color: white;
+  animation: spin 1s infinite;
+  display: none;
+  /* background-color: red; */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /*?---------------------------template-add---------------------------*/
 
