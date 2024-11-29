@@ -218,6 +218,16 @@ body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
 
 /*?---------------------------create-event---------------------------*/
 
+.create-event__df{
+  display: flex;
+  align-items: center;
+}
+
+.create-event__table{
+  display: flex;
+  justify-content: center;
+}
+
 .modal {
   --bs-modal-width: 570px;
 }
@@ -241,20 +251,9 @@ body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
   --button-hover: #5b4fc2;
 }
 
-body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  background-color: var(--bg-dark);
-  color: var(--text-light);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 #calendarContainer {
-  width: 90%;
-  max-width: 700px;
+  width: 100%;
+  max-width: 900px;
   background-color: var(--bg-light);
   border-radius: 12px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
@@ -301,7 +300,7 @@ body {
 .calendar-days div {
   background-color: var(--bg-dark);
   border-radius: 8px;
-  height: 70px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,6 +386,38 @@ body {
   background-color: var(--button-hover);
 }
 
+ .time-selector {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .time-selector h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .time-selector div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .time-button {
+    padding: 10px;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+  }
+
+  .time-button:hover {
+    background-color: #c0c0c0;
+  }
 
 /*?---------------------------template-add---------------------------*/
 
@@ -410,7 +441,7 @@ body {
 
 /*?---------------------------order-pages---------------------------*/
 
-.orderpages__gr{
+.orderpages__gr {
   display: grid !important;
   grid-template-columns: repeat(2, 2fr);
   justify-items: center;

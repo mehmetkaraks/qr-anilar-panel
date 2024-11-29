@@ -6,6 +6,7 @@ const eventModal = document.getElementById("eventModal");
 const selectedDate = document.getElementById("selectedDate");
 const eventName = document.getElementById("eventName");
 const eventCategory = document.getElementById("eventCategory");
+const eventClock = document.getElementById("eventClock");
 document.getElementById("continueButton").addEventListener("click", function () {
   window.location.href = "templates.html";
 });
