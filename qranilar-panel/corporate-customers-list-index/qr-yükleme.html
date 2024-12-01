@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>QrAnılar</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/logo/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/logo/favicon.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/logo/favicon.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/logo/favicon.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/logo/favicon.png" />
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet" />
+
+    <!-- BASE CSS -->
+    <link href="/src/assets/css/dark/qr-css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/src/assets/css/dark/qr-css/menu.css" rel="stylesheet" />
+    <link href="/src/assets/css/dark/qr-css/style.css" rel="stylesheet" />
+    <link href="/src/assets/css/dark/qr-css/vendors.css" rel="stylesheet" />
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="/src/assets/css/dark/qr-css/custom.css" rel="stylesheet" />
+
+    <!-- MODERNIZR MENU -->
+    <script src="/src/assets/js/qr-js/modernizr.js"></script>
+  </head>
+
+  <body>
+    <div class="container container__pd">
+      <div class="logo__socialm--header">
+        <div class="header__logo">
+          <a href="index.html" id="logo"><img src="/src/assets/img/img/logo/logo.png" alt="" /></a>
+        </div>
+
+        <div class="hedaer__social--media">
+          <ul class="social__media--df">
+            <li>
+              <a href="#0" class="header__icons--color"><i class="bi bi-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#0" class="header__icons--color"><i class="bi bi-twitter-x"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/qranilarapp/" class="header__icons--color"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#0" class="header__icons--color"><i class="bi bi-tiktok"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="main__img">
+          <img src="/src/assets/img/img/örnek.jpg" alt="daveti fotoğraf" width="400" height="600" />
+        </div>
+        <div class="main__description">
+          <div class="main__description--title">
+            <h2>Gökçe&Mehmet</h2>
+          </div>
+          <div class="main__description--about text-center">
+            <p>Bu mutlu günümüzde yanımızda olduğunuz için çok mutluyuz.</p>
+          </div>
+        </div>
+        <div class="main__btn">
+          <div class="images__btn--dowland" id="btn-dowland">
+            <a href="#popup" class="btn_1 rounded yellow open-popup">Fotoğraf ve Videolar'ı Görüntüle</a>
+          </div>
+
+          <div id="popup" class="popup">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <div class="step">
+                <h2 class="section_title">Hoşgeldiniz</h2>
+                <h3 class="main_question">İyi Eğlenceler</h3>
+                <div class="form-group add_top_30">
+                  <label for="name">Ad-Soyad</label>
+                  <input type="text" name="name" id="name" class="form-control required" onchange="getVals(this, 'name_field');" />
+                </div>
+                <div class="form-group">
+                  <label for="message">Notunuz</label>
+                  <textarea name="message" id="message" class="form-control required" onchange="getVals(this, 'message_field');"></textarea>
+                </div>
+
+                <div class="form-group add_bottom_30 add_top_20">
+                  <label>Fotoğraf ve Video Yükleyin<br /><small></small></label>
+                  <div class="fileupload">
+                    <input type="file" name="fileupload" accept=".jpg,.mp4" class="required" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy">© 2024 QrAnılar</div>
+    </div>
+
+    <script src="/src/assets/js/qr-js/jquery-3.7.1.min.js"></script>
+    <script src="/src/assets/js/qr-js/common_scripts.min.js"></script>
+    <script src="/src/assets/js/qr-js/velocity.min.js"></script>
+    <script src="/src/assets/js/qr-js/common_functions.js"></script>
+    <script src="/src/assets/js/qr-js/file-validator.js"></script>
+    <script src="/src/assets/js/qr-js/btn-dowland-popup.js"></script>
+
+    <script src="/src/assets/js/qr-js/func_1.js"></script>
+  </body>
+</html>
