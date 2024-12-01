@@ -45,15 +45,6 @@ function selectDate(date) {
   eventModal.classList.remove("hidden");
 }
 
-continueButton.addEventListener("click", () => {
-  if (eventName.value.trim() && eventCategory.value.trim()) {
-    eventModal.classList.add("hidden");
-    alert(`Etkinlik oluşturuldu!\nTarih: ${selectedDateValue.toLocaleDateString("tr-TR")}\nAdı: ${eventName.value}\nKategori: ${eventCategory.value}`);
-  } else {
-    alert("Lütfen etkinlik adı ve kategori girin.");
-  }
-});
-
 prevMonth.addEventListener("click", () => {
   currentMonth = currentMonth === 0 ? 11 : currentMonth - 1;
   currentYear = currentMonth === 11 ? currentYear - 1 : currentYear;

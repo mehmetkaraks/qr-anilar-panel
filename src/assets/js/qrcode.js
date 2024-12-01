@@ -9,8 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     qrImage.src = "";
     let email = user_email.value;
     let password = user_password.value;
-
-    // Generate a unique identifier for each album link
+    
     let uniqueId = Math.floor(Math.random() * 100000);
 
     let albumLink = `https://qranilar.com.tr/dashboard/album/event${uniqueId}`;
@@ -19,17 +18,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     loading.style.display = "block";
 
-    if (name != "" || email != "" || password != "") {
-      let response = await fetch(imgSrc);
-      let data = await response.blob();
+    if (email !== "" && password !== "") {
+      try {
+        let response = await fetch(imgSrc);
+        let data = await response.blob();
 
-      qrImage.src = URL.createObjectURL(data);
-      loading.style.display = "none";
-    } else {
-      alert("Please enter valid field data!!!");
-      loading.style.display = "none";
+        qrImage.src = URL.createObjectURL(data);
+        loading.style.display = "none";
+        
+        generateCodeButton.textContent = "Devam";
+        generateCodeButton.onclick = () => {
+          window.location.href = "templates.html";
+        };
+      } catch (error) {
+        console.error("QR kod oluşturulurken bir hata oluştu:", error);
+        loading.style.display = "none";
+      }
     }
-
-    URL.revokeObjectURL(data);
   };
 });
