@@ -220,12 +220,12 @@ a.btn_1.rounded,
 }
 a.btn_1.yellow,
 .btn_1.yellow {
-  background: #f8bd2c;
-  color: #111;
+  background: linear-gradient(45deg, blueviolet, deeppink);
+  color: #fff;
 }
 a.btn_1.yellow:hover,
 .btn_1.yellow:hover {
-  background-color: #d80075;
+  background: linear-gradient(45deg, blueviolet, deeppink);
   color: #fff;
 }
 

@@ -7,34 +7,31 @@
     <meta name="author" content="" />
     <title>QrAnılar</title>
 
-    <!-- Favicons-->
-    <link rel="shortcut icon" href="img/logo/favicon.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" type="image/x-icon" href="img/logo/favicon.png" />
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/logo/favicon.png" />
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/logo/favicon.png" />
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/logo/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../../src/assets/img/logo/favicon.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" href="../../src/assets/img/logo/favicon.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../../src/assets/img/logo/favicon.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="../../src/assets/img/logo/favicon.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../../src/assets/img/logo/favicon.png" />
 
-    <!-- GOOGLE WEB FONT -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet" />
 
-    <!-- BASE CSS -->
     <link href="/src/assets/css/dark/qr-css/bootstrap.min.css" rel="stylesheet" />
     <link href="/src/assets/css/dark/qr-css/menu.css" rel="stylesheet" />
     <link href="/src/assets/css/dark/qr-css/style.css" rel="stylesheet" />
     <link href="/src/assets/css/dark/qr-css/vendors.css" rel="stylesheet" />
 
-    <!-- YOUR CUSTOM CSS -->
     <link href="/src/assets/css/dark/qr-css/custom.css" rel="stylesheet" />
 
-    <!-- MODERNIZR MENU -->
     <script src="/src/assets/js/qr-js/modernizr.js"></script>
   </head>
 
   <body>
-    <div class="container container__pd">
+    <div class="container__pd">
       <div class="logo__socialm--header">
         <div class="header__logo">
-          <a href="qr-album-loading.html" id="logo"><img src="/src/assets/img/img/logo/logo.png" alt="" /></a>
+          <a href="#" id="logo">
+            <img src="../../src/assets/img/logo/logo.png" alt="" />
+          </a>
         </div>
 
         <div class="hedaer__social--media">
@@ -57,7 +54,7 @@
 
       <div class="main">
         <div class="main__img">
-          <img src="/src/assets/img/img/davetiye.jpg" alt="daveti fotoğraf" width="400" height="600" />
+          <img src="/src/assets/img/misafir-daveti/davetiye.jpg" alt="daveti fotoğraf" width="400" height="600" />
         </div>
         <div class="main__description">
           <div class="main__description--title">
@@ -72,7 +69,7 @@
             <a href="#popup" class="btn_1 rounded yellow open-popup">Fotoğraf ve Video Yükleyin</a>
           </div>
 
-          <div id="popup" class="popup">
+          <div id="popup" class="popup" style="display: flex;justify-content: center;align-items: center;">
             <div class="popup-content">
               <span class="close">&times;</span>
               <div class="step">
@@ -95,6 +92,12 @@
                       name="fileupload"
                       accept=".jpg,.jpeg,.png,.gif,.bmp,.webp,.tiff,.ico,.heif,.heic,.mp4,.mov,.avi,.mkv,.flv,.wmv,.webm,.m4v,.3gp,.ogg,.hevc"
                       class="required" />
+                  </div>
+                </div>
+
+                <div class="form-group add_bottom_30 add_top_20 text-end">
+                  <div class="fileupload">
+                    <a href="#popup" class="btn_1 rounded yellow open-popup">Gönder</a>
                   </div>
                 </div>
               </div>
