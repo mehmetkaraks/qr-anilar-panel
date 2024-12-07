@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
-    <title>Şablon Düzenle - QrAnılar</title>
+    <title>Katalog Bilgileri - QrAnılar</title>
     <link rel="icon" type="image/x-icon" href="../../src/assets/img/logo/favicon.png" />
     <link href="../../layouts/vertical-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../../layouts/vertical-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
@@ -107,7 +107,7 @@
                       <line x1="6" y1="6" x2="6.01" y2="6"></line>
                       <line x1="6" y1="18" x2="6.01" y2="18"></line>
                     </svg>
-                    <span>Şablonlar</span>
+                    <span>Katalog</span>
                   </div>
                 </a>
               </li>
@@ -123,7 +123,6 @@
                   </div>
                 </a>
               </li>
-              
             </ul>
           </nav>
         </div>
@@ -190,14 +189,64 @@
                   <div class="widget-content widget-content-area ecommerce-create-section">
                     <div class="row mb-4">
                       <div class="col-sm-12">
-                        <input type="text" class="form-control" id="inputEmail3" placeholder="Organizasyon Adı" value="" />
+                        <label>Bilgileri Doldurun</label>
+                        <div id="product-description"></div>
                       </div>
                     </div>
 
-                    <div class="row mb-4">
-                      <div class="col-sm-12">
-                        <label>Notunuz</label>
-                        <div id="product-description"></div>
+                    <div class="row">
+                      <div class="col-xl-12">
+                        <div class="invoice-content">
+                          <div class="invoice-detail-body">
+                            <div class="invoice-detail-header mb-4">
+                              <div class="invoice-address-company">
+                                <h4>Gelin Tarafı:</h4>
+
+                                <div class="invoice-address-company-fields">
+                                  <input type="text" class="form-control form-control-sm" id="company-name" placeholder="Gelin Adı" required />
+
+                                  <input type="text" class="form-control form-control-sm" id="company-name" placeholder="Gelin Anne Adı" required />
+
+                                  <input type="text" class="form-control form-control-sm" id="company-name" placeholder="Gelin Baba Adı" required />
+
+                                  <input type="text" class="form-control form-control-sm" id="company-name" placeholder="Gelin Tarafı Soyadı" required />
+                                </div>
+                              </div>
+
+                              <div class="invoice-address-company">
+                                <h4>Damat Tarafı:</h4>
+
+                                <div class="invoice-address-company-fields">
+                                  <input type="text" class="form-control form-control-sm" id="company-name" placeholder="Damat Adı" required />
+
+                                  <input type="text" class="form-control form-control-sm" id="company-name" placeholder="Damat Anne Adı" required />
+
+                                  <input type="text" class="form-control form-control-sm" id="company-name" placeholder="Damat Baba Adı" required />
+
+                                  <input type="text" class="form-control form-control-sm" id="company-name" placeholder="Damat Tarafı Soyadı" required />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="invoice-detail-total mb-4">
+                              <textarea class="form-control" id="invoice-detail-notes" placeholder="Davetiye Açıklaması" style="height: 88px"></textarea>
+
+                              <input type="text" class="form-control form-control-sm" id="payment-method-account" placeholder="Tarih" />
+
+                              <input type="text" class="form-control form-control-sm" id="payment-method-bank-name" placeholder="Saat" />
+
+                              <input type="text" class="form-control form-control-sm" id="payment-method-code" placeholder="Düğün Salonu" />
+
+                              <textarea class="form-control" id="invoice-detail-notes" placeholder="Düğün Salonu Adresi" style="height: 88px"></textarea>
+                            </div>
+
+                            <div class="form__send--btn">
+                              <a href="template-add.html">
+                                <button class="btn btn-success _effect--ripple waves-effect waves-light">Gönder</button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

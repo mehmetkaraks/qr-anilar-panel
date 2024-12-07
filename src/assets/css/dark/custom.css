@@ -421,7 +421,7 @@ body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
 
 /*?---------------------------qrcode---------------------------*/
 
-.qrcode__table{
+.qrcode__table {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -458,13 +458,13 @@ body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
   /* font-size: 0.95rem; */
 }
 .generate-qr-code {
-  background-color: #1DA1F2;
+  background-color: #1da1f2;
   color: white;
   cursor: pointer;
   font-weight: 600;
 }
 .generate-qr-code:hover {
-  background-color: #1A8CD8;
+  background-color: #1a8cd8;
 }
 .qr-canvas {
   background-color: #191e3a;
@@ -533,6 +533,44 @@ body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
   display: grid !important;
   grid-template-columns: repeat(2, 2fr);
   justify-items: center;
+}
+
+/*?---------------------------order-pages---------------------------*/
+
+.invoice-detail-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.invoice-detail-header {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.invoice-address-company {
+  width: 50% !important;
+}
+
+.invoice-address-company-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.invoice-detail-total {
+  display: flex;
+  flex-direction: column;
+  gap: 10px !important;
+  width: 80%;
+}
+
+.form__send--btn {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*!---------------------------responsive---------------------------*/
