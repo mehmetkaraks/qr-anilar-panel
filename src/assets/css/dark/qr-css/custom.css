@@ -66,18 +66,19 @@ p {
   margin-bottom: 25px;
   color: #fff;
 }
-
-.popup {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
+#popup {
+  position: fixed; /* Sayfaya sabitlenir */
   top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  width: 100vw; /* Tüm genişliği kaplar */
+  height: 100vh; /* Tüm yüksekliği kaplar */
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Arka plan rengi (isteğe bağlı) */
+  z-index: 9999; /* Popup diğer elementlerin üstünde olur */
 }
+
 
 .popup-content {
   background-color: #0e1726;
@@ -123,7 +124,7 @@ label {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
 }

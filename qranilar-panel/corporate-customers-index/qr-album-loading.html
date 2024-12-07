@@ -69,7 +69,7 @@
             <a href="#popup" class="btn_1 rounded yellow open-popup">Fotoğraf ve Video Yükleyin</a>
           </div>
 
-          <div id="popup" class="popup" style="display: flex;justify-content: center;align-items: center;">
+          <div id="popup" class="popup" style="display: none">
             <div class="popup-content">
               <span class="close">&times;</span>
               <div class="step">
@@ -77,28 +77,20 @@
                 <h3 class="main_question">İyi Eğlenceler</h3>
                 <div class="form-group add_top_30">
                   <label for="name">Ad-Soyad</label>
-                  <input type="text" name="name" id="name" class="form-control required" onchange="getVals(this, 'name_field');" />
+                  <input type="text" name="name" id="name" class="form-control required" />
                 </div>
                 <div class="form-group">
                   <label for="message">Notunuz</label>
-                  <textarea name="message" id="message" class="form-control required" onchange="getVals(this, 'message_field');"></textarea>
+                  <textarea name="message" id="message" class="form-control required"></textarea>
                 </div>
-
                 <div class="form-group add_bottom_30 add_top_20">
-                  <label>Fotoğraf ve Video Yükleyin<br /><small></small></label>
+                  <label>Fotoğraf ve Video Yükleyin</label>
                   <div class="fileupload">
-                    <input
-                      type="file"
-                      name="fileupload"
-                      accept=".jpg,.jpeg,.png,.gif,.bmp,.webp,.tiff,.ico,.heif,.heic,.mp4,.mov,.avi,.mkv,.flv,.wmv,.webm,.m4v,.3gp,.ogg,.hevc"
-                      class="required" />
+                    <input type="file" name="fileupload" accept=".jpg,.jpeg,.png,.gif,.bmp,.webp,.tiff,.ico,.heif,.heic,.mp4,.mov,.avi,.mkv,.flv,.wmv,.webm,.m4v,.3gp,.ogg,.hevc" class="required" />
                   </div>
                 </div>
-
                 <div class="form-group add_bottom_30 add_top_20 text-end">
-                  <div class="fileupload">
-                    <a href="#popup" class="btn_1 rounded yellow open-popup">Gönder</a>
-                  </div>
+                  <a href="#popup" class="btn_1 rounded yellow open-popup">Gönder</a>
                 </div>
               </div>
             </div>

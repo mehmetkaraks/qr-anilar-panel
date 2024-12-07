@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".open-popup").forEach((button) => {
     button.addEventListener("click", function (event) {
       event.preventDefault();
-      document.getElementById("popup").style.display = "block";
+      document.getElementById("popup").style.display = "flex";
     });
   });
 
