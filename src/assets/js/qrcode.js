@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         generateCodeButton.textContent = "Devam";
         generateCodeButton.onclick = () => {
-          window.location.href = "templates.html";
+          window.location.href = "order.html";
         };
       } catch (error) {
         console.error("QR kod oluşturulurken bir hata oluştu:", error);
