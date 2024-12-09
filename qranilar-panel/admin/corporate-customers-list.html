@@ -31,7 +31,6 @@
 
     <div class="main-container" id="container">
       <div class="overlay"></div>
-      <div class="cs-overlay"></div>
       <div class="search-overlay"></div>
 
       <section class="sidebar__wd">
@@ -288,7 +287,23 @@
     <script src="../../src/assets/js/custom.js"></script>
 
     <script src="../../src/plugins/src/table/datatable/datatables.js"></script>
-    <script src="../../src/plugins/src/table/datatable/button-ext/dataTables.buttons.min.js"></script>
     <script src="../../src/assets/js/apps/invoice-list.js"></script>
+    <script>
+      document.getElementById("btn-edit-contact").addEventListener("click", function () {
+        var editTitle = document.getElementById("addContactModalTitleLabel2");
+        editTitle.style.display = "block";
+
+        var addTitle = document.getElementById("addContactModalTitleLabel1");
+        addTitle.style.display = "none";
+      });
+
+      document.getElementById("btn-add-contact").addEventListener("click", function () {
+        var addTitle = document.getElementById("addContactModalTitleLabel1");
+        addTitle.style.display = "block";
+
+        var editTitle = document.getElementById("addContactModalTitleLabel2");
+        editTitle.style.display = "none";
+      });
+    </script>
   </body>
 </html>
