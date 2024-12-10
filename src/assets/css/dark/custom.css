@@ -573,6 +573,26 @@ body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
   justify-content: flex-end;
 }
 
+/*?---------------------------profile-pages---------------------------*/
+
+.profile__information {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile__information--list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+body.dark .user-profile .widget-content-area .user-info-list ul.contacts-block {
+  border: none;
+  max-width: 100%;
+  margin: 30px 0 0 0;
+}
+
 /*!---------------------------responsive---------------------------*/
 
 @media (max-width: 991px) {
