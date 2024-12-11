@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
         qrImage.src = URL.createObjectURL(data);
         loading.style.display = "none";
         
-        generateCodeButton.textContent = "Devam";
+        generateCodeButton.textContent = "İndir";
         generateCodeButton.onclick = () => {
-          window.location.href = "templates.html";
+          window.location.href = "#";
         };
       } catch (error) {
         console.error("QR kod oluşturulurken bir hata oluştu:", error);
