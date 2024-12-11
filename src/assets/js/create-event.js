@@ -8,7 +8,7 @@ const eventName = document.getElementById("eventName");
 const eventCategory = document.getElementById("eventCategory");
 const eventClock = document.getElementById("eventClock");
 document.getElementById("continueButton").addEventListener("click", function () {
-  window.location.href = "qrcode.html";
+  window.location.href = "packets.html";
 });
 
 let currentMonth = new Date().getMonth();
