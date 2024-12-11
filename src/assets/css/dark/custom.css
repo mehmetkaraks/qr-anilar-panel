@@ -498,6 +498,41 @@ body.dark .pricing-table-2 .pricing-plan .btn-dark.button {
   /* background-color: red; */
 }
 
+.main__img {
+  display: flex;
+  justify-content: center; /* Ortaya hizalama */
+  gap: 20px; /* Fotoğraflar arasındaki boşluk */
+}
+
+.main__img img {
+  border: 2px solid #ccc; /* İsteğe bağlı: Fotoğraf kenarlığı */
+  border-radius: 8px; /* İsteğe bağlı: Köşe yuvarlama */
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.image-container img {
+  display: block;
+  width: 300px; /* İhtiyaca göre ayarlanabilir */
+  height: auto;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
