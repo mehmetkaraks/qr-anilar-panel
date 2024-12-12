@@ -728,6 +728,53 @@ img.flag-width {
   border-radius: 10px;
 }
 
+/*?---------------------------Admin-panel-template-add---------------------------*/
+
+.upload-area {
+  text-align: center;
+  margin: 10px 10px; /* Dikeyde boşluk */
+  width: 100%; /* Tüm alanı kapsayabilir */
+  max-width: 400px; /* Maksimum genişlik sınırı */
+  background-color: #2b2f3a; /* Arkaplan rengi */
+  padding: 20px;
+  border: 2px dashed #4a4e69; /* Daha iyi kontrast */
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px; /* Sabit yükseklik */
+  color: #a1a1a1; /* Yazı rengi */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.upload-box:hover {
+  background-color: #3a3f52; /* Hover efekti */
+  color: #fff;
+}
+
+.upload-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.upload-box p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.templates__add--icons {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+
+
 /*!---------------------------responsive---------------------------*/
 
 @media (max-width: 991px) {

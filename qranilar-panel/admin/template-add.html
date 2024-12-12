@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="../../src/assets/css/light/apps/blog-create.css" />
     <link rel="stylesheet" href="../../src/assets/css/dark/apps/blog-create.css" />
     <link rel="stylesheet" href="../../src/assets/css/dark/custom.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   </head>
   <body class="layout-boxed">
     <div id="load_screen">
@@ -217,31 +218,48 @@
               <div class="row mb-4 layout-spacing layout-top-spacing">
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
                   <div class="widget-content widget-content-area blog-create-section">
+                    <h5 class="mb-4">Şablon Ekle</h5>
                     <div class="row mb-4">
                       <div class="col-sm-12">
-                        <label for="post-meta-description">Ürün Başlığı</label>
-                        <input type="text" class="form-control" id="post-title" placeholder="Ürün Başlığı" />
+                        <label for="post-meta-description">Şablon Başlığı</label>
+                        <input type="text" class="form-control" id="post-title" placeholder="Şablon Başlığı" />
                       </div>
                     </div>
-                  </div>
 
-                  <div class="widget-content widget-content-area blog-create-section mt-4">
-                    <h5 class="mb-4">Şablon Detay</h5>
+                    <div class="row">
+                      <label for="post-meta-description">Şablon Fotoğraftı (358x505)</label>
+                      <div class="upload-area mb-4">
+                        <label for="file-input">
+                          <div class="upload-box">
+                            <i class="fa-solid fa-cloud-arrow-up templates__add--icons"></i>
+                            <!-- Font Awesome simgesi -->
+                            <p>Buraya bir dosya sürükleyip bırakın veya tıklayın</p>
+                          </div>
+                        </label>
+                        <input type="file" id="file-input" style="display: none" />
 
-                    <div class="row mb-4">
-                      <div class="col-xxl-12 mb-4">
-                        <div class="img-uploader-content">
-                          <label for="post-meta-description">Şablon Fotoğraftı (358x505)</label>
-                          <input type="file" class="template__add--img" name="filepond" accept="image/png, image/jpeg, image/gif" />
-                        </div>
+                        <input type="file" id="file-input" accept="image/*" style="display: none" />
                       </div>
                       <div class="col-xxl-12 mb-4">
                         <label for="post-meta-description">Şablon Kategorisi</label>
-                        <input id="category" name="category" placeholder="Kategori" />
+                        <select id="eventCategory" class="form-control" required>
+                          <option value="" selected disabled>Kategori</option>
+                          <option value="Davetiye">Davetiye</option>
+                          <option value="Masa Kartı">Masa Kartı</option>
+                        </select>
                       </div>
                       <div class="col-xxl-12">
-                        <label for="post-meta-description">Şablonu Ekle</label>
-                        <input type="file" class="filepond file-upload-multiple" name="filepond" id="product-images" multiple data-allow-reorder="true" data-max-file-size="3MB" data-max-files="5" />
+                        <label for="post-meta-description">Etkinlik Tasarımı</label>
+                        <select id="eventCategory" class="form-control" required>
+                          <option value="" selected disabled>Alt Kategori</option>
+                          <option value="Düğün">Düğün</option>
+                          <option value="Kına">Kına</option>
+                          <option value="Nişan">Nişan</option>
+                          <option value="Doğum Günü">Doğum Günü</option>
+                          <option value="Özel Gün">Özel Gün</option>
+                          <option value="Lansman">Lansman</option>
+                          <option value="Konser">Parti</option>
+                        </select>
                       </div>
                     </div>
                   </div>
@@ -280,5 +298,6 @@
     <script src="../../src/plugins/src/tagify/tagify.min.js"></script>
 
     <script src="../../src/assets/js/apps/blog-create.js"></script>
+    <script src="../../src/assets/js/admin-panel/template-add.js"></script>
   </body>
 </html>
