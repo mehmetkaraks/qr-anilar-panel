@@ -703,18 +703,29 @@ body.dark .user-profile .widget-content-area .user-info-list ul.contacts-block {
   border-color: #e7515a !important;
 }
 
-.popup__delete--btn{
+.popup__delete--btn {
   background-color: #1a8cd8 !important;
   border: #1a8cd8 !important;
 }
 
-.popup__delete--btn:hover{
+.popup__delete--btn:hover {
   background-color: #1a8cd8 !important;
   border: #1a8cd8 !important;
 }
 
-.popup__close{
+.popup__close {
   color: #fff;
+}
+
+/*?---------------------------menu---------------------------*/
+
+.sidebar-wrapper ul.menu-categories {
+  height: 65vh  !important;
+}
+
+img.flag-width {
+  width: 50px;
+  border-radius: 10px;
 }
 
 /*!---------------------------responsive---------------------------*/

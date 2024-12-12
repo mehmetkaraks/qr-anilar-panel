@@ -771,9 +771,6 @@ body.dark .sidebar-wrapper .shadow-bottom {
   top: 171px;
   height: 20px;
 }
-body.dark .sidebar-wrapper ul.menu-categories {
-  height: calc(100vh - 173px) !important;
-}
 body.dark .sidebar-closed .sidebar-wrapper .shadow-bottom {
   top: 150px;
   height: 22px;
