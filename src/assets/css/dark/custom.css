@@ -734,7 +734,7 @@ img.flag-width {
   text-align: center;
   margin: 10px 10px; /* Dikeyde boşluk */
   width: 100%; /* Tüm alanı kapsayabilir */
-  max-width: 400px; /* Maksimum genişlik sınırı */
+  max-width: 300px; /* Maksimum genişlik sınırı */
   background-color: #2b2f3a; /* Arkaplan rengi */
   padding: 20px;
   border: 2px dashed #4a4e69; /* Daha iyi kontrast */
