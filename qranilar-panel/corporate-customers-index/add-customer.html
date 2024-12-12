@@ -108,7 +108,6 @@
                   </div>
                 </a>
               </li>
-              
             </ul>
           </nav>
         </div>
@@ -173,61 +172,70 @@
               <div class="row invoice layout-top-spacing layout-spacing">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                   <div class="doc-container">
-                    <div class="row">
-                      <div class="invoice-content">
-                        <div class="invoice-detail-body">
-                          <div class="invoice-detail-header">
-                            <div class="row justify-content-between">
-                              <div class="invoice-address-client">
-                                <h4>Müşteri Bilgileri:</h4>
+                    <div class="invoice-content">
+                      <div class="invoice-detail-body">
+                        <div class="invoice-detail-header">
+                          <div class="invoice-address-client">
+                            <h4>Müşteri Bilgileri:</h4>
 
-                                <div class="form__gr">
-                                  <div class="form__user-information">
+                            <div class="form__gr">
+                              <div class="form-group">
+                                <div class="form__input">
+                                  <label for="client-name" class="col-sm-4 col-form-label col-form-label-sm">İsim:</label>
+                                  <input type="text" class="form-control form-control" id="client-name" placeholder="İsim" />
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <div class="form__input">
+                                  <label for="client-email" class="col-sm-4 col-form-label col-form-label-sm">E-posta:</label>
+                                  <input type="text" class="form-control form-control" id="client-email" placeholder="E-posta" />
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <div class="form__input">
+                                  <label for="invoice-detail-notes" class="col-sm-4 col-form-label col-form-label-sm">Organizasyon:</label>
+                                  <select id="eventCategory" class="form-control" required>
+                                    <option value="" selected disabled>Organizasyon Seç</option>
+                                    <option value="Düğün">Düğün</option>
+                                    <option value="Kına">Kına</option>
+                                    <option value="Nişan">Nişan</option>
+                                    <option value="Doğum Günü">Doğum Günü</option>
+                                    <option value="Özel Gün">Özel Gün</option>
+                                    <option value="Lansman">Lansman</option>
+                                    <option value="Konser">Parti</option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <div class="form__input">
+                                  <label for="client-email" class="col-sm-4 col-form-label col-form-label-sm">Soyisim:</label>
+                                  <input type="text" class="form-control form-control" id="client-email" placeholder="Soyisim" />
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <div class="form__input">
+                                  <label for="invoice-detail-notes" class="col-sm-4 col-form-label col-form-label-sm">Telefon:</label>
+                                  <input type="text" class="form-control form-control" id="client-phone" placeholder="0 (555) 555 55 55" />
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <div class="form__input">
+                                  <label for="invoice-detail-notes" class="col-sm-4 col-form-label col-form-label-sm">Tarih:</label>
+                                  <input type="text" id="tarih" class="form-control form-control form-date-input" placeholder="Tarih Seçin" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="add__customer--btn">
+                              <div class="invoice-actions-btn">
+                                <div class="invoice-action-btn">
+                                  <div class="row save__btn--df">
                                     <div class="">
-                                      <div class="form-group">
-                                        <div class="form__input">
-                                          <label for="client-name" class="col-sm-4 col-form-label col-form-label-sm">İsim Soyisim:</label>
-                                          <input type="text" class="form-control form-control-sm" id="client-name" placeholder="İsim Soyisim" />
-                                        </div>
-                                      </div>
-
-                                      <div class="form-group">
-                                        <div class="form__input">
-                                          <label for="client-email" class="col-sm-4 col-form-label col-form-label-sm">E-posta:</label>
-                                          <input type="text" class="form-control form-control-sm" id="client-email" placeholder="E-posta" />
-                                        </div>
-                                      </div>
-
-                                      <div class="form-group">
-                                        <div class="form__input">
-                                          <label for="invoice-detail-notes" class="col-sm-4 col-form-label col-form-label-sm">Telefon:</label>
-                                          <input type="text" class="form-control form-control-sm" id="client-phone" placeholder="0 (555) 555 55 55" />
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div class="form__user-adress">
-                                    <div class="">
-                                      <div class="row">
-                                        <div class="col-md-12">
-                                          <div class="form-group">
-                                            <label for="invoice-detail-notes" class="form__input col-form-label col-form-label-sm">Adres:</label>
-                                            <div class="form__input">
-                                              <textarea class="form-control" id="invoice-detail-notes" placeholder="Adres" style="height: 88px"></textarea>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="invoice-actions-btn">
-                                      <div class="invoice-action-btn">
-                                        <div class="row save__btn--df">
-                                          <div class="">
-                                            <a href="javascript:void(0);" class="btn btn-success btn-download">Kaydet</a>
-                                          </div>
-                                        </div>
-                                      </div>
+                                      <a href="javascript:void(0);" class="btn btn-success btn-download">Kaydet</a>
                                     </div>
                                   </div>
                                 </div>
@@ -271,5 +279,15 @@
     <script src="../../src/plugins/src/filepond/filepondPluginFileValidateSize.min.js"></script>
     <script src="../../src/plugins/src/flatpickr/flatpickr.js"></script>
     <script src="../../src/assets/js/apps/invoice-add.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/tr.js"></script>
+    <script>
+      flatpickr("#tarih", {
+        locale: "tr", // Türkçe dil desteği
+        dateFormat: "d.m.Y", // Türkçe tarih formatı (gün.ay.yıl)
+        defaultDate: "today",
+      });
+    </script>
   </body>
 </html>

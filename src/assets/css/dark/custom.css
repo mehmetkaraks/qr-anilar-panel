@@ -165,7 +165,7 @@ button.upgrade__package {
 .form__gr {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  gap: 50px;
+  gap: 25px;
 }
 
 .save__btn--df {
@@ -720,7 +720,7 @@ body.dark .user-profile .widget-content-area .user-info-list ul.contacts-block {
 /*?---------------------------menu---------------------------*/
 
 .sidebar-wrapper ul.menu-categories {
-  height: 65vh  !important;
+  height: 65vh !important;
 }
 
 img.flag-width {
@@ -769,11 +769,77 @@ img.flag-width {
 }
 
 .templates__add--icons {
-    font-size: 35px;
-    margin-bottom: 10px;
+  font-size: 35px;
+  margin-bottom: 10px;
 }
 
+/*?---------------------------corporate-customers-add-customer---------------------------*/
 
+.invoice-address-client {
+  width: 100%;
+}
+
+input[type="date"] {
+  background: #1b2e4b !important; /* Arka plan rengini ayarla */
+  color: #00d4ff; /* Yazı rengini ayarla */
+  border: 1px solid #772727; /* Çerçeve rengi */
+  border-radius: 5px; /* Köşeleri yuvarla */
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  height: 40px;
+}
+
+input[type="date"]:focus {
+  outline: none; /* Varsayılan odak stilini kaldır */
+  border-color: #00d4ff; /* Odaklandığında çerçeve rengi */
+}
+
+.flatpickr-calendar {
+  background: #1b2e4b !important; /* Arka plan rengini değiştir */
+  color: #fff; /* Yazı rengini değiştir */
+  border-radius: 10px;
+}
+.flatpickr-day.selected {
+  background: #1b2e4b !important; /* Seçili günün arka planı */
+  color: #fff;
+}
+.flatpickr-day {
+  width: 40px; /* Hücre genişliği */
+  height: 40px; /* Hücre yüksekliği */
+  line-height: 40px;
+}
+
+.flatpickr-day.selected,
+.flatpickr-day:hover {
+  background-color: #1b2e4b !important;
+  color: #ffffff;
+}
+
+input#tarih {
+  background: #1b2e4b !important;
+  color: #757d98;
+}
+
+.form-control {
+  color: #757d98 !important;
+}
+
+.add__customer--btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+body.dark .invoice-actions-btn {
+  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 25px;
+  background-color: #0e1726;
+  border: 1px solid #0e1726;
+  border-radius: 8px;
+  width: 25%;
+}
 
 /*!---------------------------responsive---------------------------*/
 
